@@ -63,7 +63,7 @@ El ordenador tiene que estar encendido a esa hora; si no, ejecútalo a mano cuan
 
 - `BIWENGER_CONFIG`: el contenido completo de tu `config.json` (`gh secret set BIWENGER_CONFIG < config.json`).
 - `MAIL_USERNAME` y `MAIL_PASSWORD`: cuenta de Gmail y su contraseña de aplicación.
-- `MAIL_TO`: destinatario del correo.
+- `MAIL_TO`: destinatarios del correo, separados por comas.
 
 Para lanzarlo a mano: pestaña **Actions** → «Panel diario» → **Run workflow**, o `gh workflow run panel.yml`.
 
