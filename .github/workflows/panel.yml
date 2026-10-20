@@ -1,0 +1,121 @@
+name: Panel diario
+
+on:
+  schedule:
+    # 8:00 en Madrid: 06:00 UTC en horario de verano, 07:00 UTC en invierno.
+    # Se lanzan ambos y el paso "gate" deja pasar solo uno al día.
+    - cron: "0 6 * * *"
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: panel
+  cancel-in-progress: false
+
+env:
+  TZ: Europe/Madrid
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate (solo una ejecución diaria a partir de las 8:00 de Madrid)
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          hour=$(date +%-H)
+          if [ "$hour" -ge 8 ] && [ ! -f "datos/historial/$(date +%F).json" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Hora local $hour o panel de hoy ya generado: se omite."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: "3.11"
+
+      - name: Generar panel
+        if: steps.gate.outputs.run == 'true'
+        env:
+          BIWENGER_CONFIG: ${{ secrets.BIWENGER_CONFIG }}
+        run: |
+          printf '%s' "$BIWENGER_CONFIG" > config.json
+          python biwenger_nba.py
+          rm config.json
+
+      - name: Guardar historial en el repo
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/historial datos/inicio.json datos/lesiones.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Datos $(date +%F)"
+            git push
+          fi
+
+      - name: Preparar web
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          mkdir _site
+          cp panel.html _site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.gate.outputs.run == 'true'
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  email:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar correo
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+        shell: python
+        run: |
+          import datetime as dt
+          import os
+          import smtplib
+          from email.mime.text import MIMEText
+
+          url = os.environ["PAGE_URL"]
+          msg = MIMEText("Panel actualizado: %s\n" % url, "plain", "utf-8")
+          msg["From"] = os.environ["MAIL_USERNAME"]
+          msg["To"] = os.environ["MAIL_TO"]
+          msg["Subject"] = "Panel Biwenger NBA – %s" % dt.date.today().strftime("%d/%m/%Y")
+
+          server = smtplib.SMTP("smtp.gmail.com", 587)
+          server.starttls()
+          server.login(os.environ["MAIL_USERNAME"], os.environ["MAIL_PASSWORD"])
+          server.send_message(msg)
+          server.quit()

@@ -1,0 +1,18 @@
+{
+  "_ayuda": "Copia este archivo como config.json. Rellena email y password, O BIEN token (si entras en Biwenger con Google o Apple). No compartas config.json con nadie.",
+  "email": "",
+  "password": "",
+  "token": "",
+  "liga_id": null,
+  "competicion": "nba",
+  "puntuacion": 1,
+  "x_version": "630",
+  "saldo_inicial": 30000000,
+  "posiciones": {
+    "1": "Base",
+    "2": "Alero",
+    "3": "Pívot",
+    "4": "Pívot",
+    "5": "Entrenador"
+  }
+}
