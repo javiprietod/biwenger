@@ -70,6 +70,7 @@ Para lanzarlo a mano: pestaña **Actions** → «Panel diario» → **Run workfl
 ## 5. Qué es exacto y qué es estimado
 
 - **Exacto:** tu saldo, plantillas, valores, variaciones, mercado y clasificación.
+- **Puja máxima:** saldo + 25 % del valor del equipo − pujas abiertas. La tuya es la que da Biwenger; la de los rivales sale de su saldo estimado y no descuenta sus pujas abiertas, que no son públicas. En «¿Y si vende…?» puedes marcar jugadores de cualquier usuario y ver cómo cambiaría su puja máxima: vender por su valor la sube un 75 % de ese valor (entra el dinero, pero el equipo vale menos). Si tu liga usa otro porcentaje, cámbialo con `puja_max_pct` en `config.json` (por ejemplo `0.25`).
 - **Estimado:** el saldo de los rivales. Biwenger no lo publica, así que se calcula con los fichajes, ventas y primas por jornada del tablón de la liga, tomando tu saldo real como referencia. Solo cuenta lo ocurrido desde el último reinicio de la liga.
 - Tras un reinicio cada uno recibe un equipo distinto, así que lo que todos comparten es el **patrimonio** (saldo + valor del equipo), no el saldo. El valor de cada equipo al reiniciar se guarda en `datos/inicio.json` la primera vez que se ejecuta el script; no lo borres. Si conoces el patrimonio inicial (contando las primas del primer día), ponlo en `saldo_inicial`: sirve de control frente a tu saldo y de respaldo si tu saldo no se puede descargar.
 

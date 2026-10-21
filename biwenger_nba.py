@@ -55,6 +55,7 @@ DEFAULT_CONFIG = {
     "x_version": "630",
     "saldo_inicial": None,
     "max_movimientos": 3000,
+    "puja_max_pct": 0.25,
     "posiciones": {"1": "Base", "2": "Alero", "3": "Pívot", "4": "Pívot", "5": "Entrenador"},
 }
 
@@ -518,6 +519,28 @@ def build_model(raw, cfg, warnings):
             "until": sale.get("until"), "date": sale.get("date"),
         })
 
+    # ---- puja máxima ------------------------------------------------------
+    # Biwenger deja pujar hasta saldo + un % del valor del equipo, menos lo que ya
+    # tienes comprometido en pujas abiertas. Las pujas de los rivales no se ven.
+    pct = num(cfg.get("puja_max_pct"), 0.25)
+    mstatus = (mdata.get("status") if isinstance(mdata, dict) else None) or {}
+    offers = as_list(mdata.get("offers") if isinstance(mdata, dict) else None) \
+        or as_list(D(raw.get("yo") or {}).get("offers"))
+    my_bids = sum(num(o.get("amount")) for o in offers if isinstance(o, dict)
+                  and o.get("type") == "purchase" and o.get("status") == "waiting"
+                  and uid_of(o.get("from")) == me)
+    api_max = num(mstatus.get("maximumBid"), None)
+    for u in users:
+        u["bids"] = my_bids if u["me"] else None
+        u["maxBid"] = (u["balance"] + pct * u["value"] - (u["bids"] or 0)
+                       if u["balance"] is not None else None)
+        if u["me"] and api_max is not None:
+            if u["maxBid"] is not None and abs(u["maxBid"] - api_max) > 50000:
+                warnings.append("Biwenger da una puja máxima de %.2fM y la fórmula (saldo + %d%% "
+                                "del equipo − pujas abiertas) da %.2fM. Revisa puja_max_pct."
+                                % (api_max / 1e6, round(pct * 100), u["maxBid"] / 1e6))
+            u["maxBid"] = api_max
+
     names = {u["id"]: u["name"] for u in users}
     recent = []
     for m in moves[:25]:
@@ -544,6 +567,7 @@ def build_model(raw, cfg, warnings):
         "players": {pid: players[pid] for pid in used if pid in players},
         "owner": owner_of,
         "freeTop": [p["id"] for p in top_avg],
+        "bidPct": pct,
         "balanceNote": ("Tu saldo es exacto. El de los rivales se estima con los fichajes, "
                         "ventas y primas del tablón de la liga."
                         if my_balance is not None else
@@ -763,6 +787,11 @@ select,button.tg{font:inherit;font-size:13.5px;padding:6px 10px;border-radius:8p
 .empty{padding:22px;color:var(--muted);text-align:center;font-size:13.5px}
 .mini{padding:6px 0}
 .mini h3{font-size:13.5px;margin:6px 12px 4px;color:var(--ink-2);font-weight:600}
+input.px{font:inherit;font-size:13.5px;width:86px;padding:4px 8px;border-radius:6px;text-align:right;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);font-variant-numeric:tabular-nums}
+input.px:disabled{color:var(--muted);background:var(--surface-2)}
+input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+tr.sold td{background:var(--accent-soft)}
 </style>
 </head>
 <body>
@@ -775,7 +804,7 @@ select,button.tg{font:inherit;font-size:13.5px;padding:6px 10px;border-radius:8p
 </header>
 <nav><div class="in">
   <a href="#resumen" class="on">Resumen</a><a href="#usuarios">Usuarios</a>
-  <a href="#mercado">Mercado</a><a href="#plantillas">Plantillas</a>
+  <a href="#puja">Puja máxima</a><a href="#mercado">Mercado</a><a href="#plantillas">Plantillas</a>
   <a href="#evolucion">Evolución</a><a href="#jugadores">Subidas y bajadas</a>
   <a href="#movimientos">Movimientos</a>
 </div></nav>
@@ -791,6 +820,20 @@ select,button.tg{font:inherit;font-size:13.5px;padding:6px 10px;border-radius:8p
     <h2>Usuarios de la liga</h2>
     <p class="note" id="balanceNote"></p>
     <div class="card tbl" id="usersTbl"></div>
+  </section>
+
+  <section id="puja">
+    <h2>Puja máxima</h2>
+    <p class="note" id="bidNote"></p>
+    <div class="card tbl" id="bidTbl"></div>
+    <h2 style="margin-top:22px">¿Y si vende…?</h2>
+    <p class="note">Marca jugadores para simular su venta. Por defecto se venden por su valor
+      (venta directa al mercado); cambia el precio (en M€) si la venta es a otro usuario.
+      Las ventas marcadas de cada usuario se reflejan en la columna «Con ventas».</p>
+    <div class="bar"><select id="simSel" aria-label="Usuario"></select>
+      <button class="chip" id="simClear" type="button">Quitar ventas</button></div>
+    <div class="kpis" id="simKpis"></div>
+    <div class="card tbl" id="simTbl" style="margin-top:10px"></div>
   </section>
 
   <section id="mercado">
@@ -976,6 +1019,86 @@ table(document.getElementById("usersTbl"), [
   {key:"worth", label:"Patrimonio", num:true, fmt:r => money(r.worth), sort:r => r.worth},
   {key:"size", label:"Jug.", num:true, fmt:r => r.size ?? "—"},
 ], users.map(u => Object.assign(u, {worth: (u.balance||0) + u.value})), "position", -1, r => r.me ? "me" : "");
+
+/* ---------- puja máxima y simulador de ventas ---------- */
+(function(){
+  const pct = M.bidPct ?? 0.25, pctTxt = nf(0).format(pct * 100) + " %";
+  const sales = {};  // usuario -> {jugador: precio de venta}
+  const sim = u => {
+    let cash = 0, val = 0, n = 0;
+    for (const [pid, price] of Object.entries(sales[u.id] || {})) { cash += price; val += P[pid]?.price || 0; n++; }
+    return {n, cash, val, balance: u.balance === null ? null : u.balance + cash, value: u.value - val,
+            maxBid: u.maxBid === null ? null : u.maxBid + cash - pct * val};
+  };
+  document.getElementById("bidNote").textContent = `Puja máxima = saldo + ${pctTxt} del valor del equipo − pujas abiertas. `
+    + (me ? "La tuya es la que da Biwenger. " : "")
+    + "La de los rivales sale de su saldo estimado y no descuenta sus pujas abiertas, que no son públicas.";
+
+  function drawTable(){
+    table(document.getElementById("bidTbl"), [
+      {key:"name", label:"Usuario", fmt:r => esc(r.name) + (r.me ? ' <span class="tag">tú</span>' : "")},
+      {key:"balance", label:"Saldo", num:true, fmt:r => money(r.balance) + (r.balance !== null && !r.balanceExact ? ' <span class="tag">est.</span>' : "")},
+      {key:"value", label:"Valor equipo", num:true, fmt:r => money(r.value)},
+      {key:"pctVal", label:pctTxt + " equipo", num:true, fmt:r => money(r.pctVal)},
+      {key:"bids", label:"Pujas abiertas", num:true, fmt:r => r.bids === null ? '<span class="flat">?</span>' : money(r.bids)},
+      {key:"maxBid", label:"Puja máxima", num:true, fmt:r => `<b>${money(r.maxBid)}</b>`},
+      {key:"simBid", label:"Con ventas", num:true, fmt:r => r.simN ? `<b>${money(r.simBid)}</b> <span class="tag">${r.simN} vend.</span>` : '<span class="flat">—</span>'},
+      {key:"simGain", label:"Diferencia", num:true, fmt:r => r.simN ? delta(r.simGain) : '<span class="flat">—</span>'},
+    ], users.map(u => {
+      const s = sim(u);
+      return {id:u.id, name:u.name, me:u.me, balance:u.balance, balanceExact:u.balanceExact, value:u.value,
+        pctVal: pct * u.value, bids:u.bids, maxBid:u.maxBid, simN:s.n,
+        simBid: s.n ? s.maxBid : null, simGain: s.n && s.maxBid !== null ? s.maxBid - u.maxBid : null};
+    }), "maxBid", -1, r => r.me ? "me" : "");
+  }
+
+  const sel = document.getElementById("simSel");
+  sel.innerHTML = users.map(u => `<option value="${u.id}" ${u.me ? "selected" : ""}>${esc(u.name)}${u.me ? " (tú)" : ""}</option>`).join("");
+  function drawKpis(){
+    const u = byId[sel.value]; if (!u) return;
+    const s = sim(u);
+    document.getElementById("simKpis").innerHTML = [
+      ["Puja máxima ahora", money(u.maxBid), u.me ? "Dato de Biwenger" : "Con saldo estimado"],
+      ["Con las ventas", money(s.maxBid), s.n ? delta(s.maxBid - u.maxBid) + ` · ${s.n} jugador${s.n > 1 ? "es" : ""}` : "Marca jugadores abajo"],
+      ["Saldo tras vender", money(s.balance), s.n ? "Ingresa " + money(s.cash) : "—"],
+      ["Equipo tras vender", money(s.value), s.n ? `Pierde ${money(s.val)} de valor` : "—"],
+    ].map(([l,v,d]) => `<div class="card kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join("");
+  }
+  function refresh(){ drawKpis(); drawTable(); }
+  function drawRoster(){
+    const u = byId[sel.value]; if (!u) return;
+    const chosen = sales[u.id] || {};
+    const rows = u.roster.filter(r => P[r.pid]).map(r => P[r.pid]).sort((a,b) => b.price - a.price);
+    const box = document.getElementById("simTbl");
+    box.innerHTML = rows.length ? `<table><thead><tr><th>Vender</th><th>Jugador</th><th>Estado</th>
+      <th class="n">Valor</th><th class="n">Precio venta (M€)</th><th class="n">Suma a la puja</th></tr></thead><tbody>${
+      rows.map(p => { const on = p.id in chosen, price = on ? chosen[p.id] : p.price;
+        return `<tr class="${on ? "sold" : ""}" data-pid="${p.id}">
+          <td><input type="checkbox" aria-label="Vender ${esc(p.name)}" ${on ? "checked" : ""}></td>
+          <td>${player(p)}</td><td>${status(p)}</td><td class="n">${money(p.price)}</td>
+          <td class="n"><input class="px" type="text" inputmode="decimal" value="${nf(2).format(price/1e6)}" ${on ? "" : "disabled"}></td>
+          <td class="n gain">${delta(price - pct * p.price)}</td></tr>`; }).join("")}</tbody></table>`
+      : '<div class="empty">Sin jugadores</div>';
+    box.querySelectorAll("tr[data-pid]").forEach(tr => {
+      const pid = tr.dataset.pid, p = P[pid], cb = tr.querySelector("input[type=checkbox]"), px = tr.querySelector("input.px");
+      const price = () => {
+        const t = px.value.trim(), v = parseFloat(t.includes(",") ? t.replace(/\./g, "").replace(",", ".") : t);
+        return isNaN(v) || v < 0 ? p.price : v * 1e6;
+      };
+      const update = () => {
+        const s = sales[u.id] = sales[u.id] || {};
+        if (cb.checked) s[pid] = price(); else delete s[pid];
+        px.disabled = !cb.checked; tr.classList.toggle("sold", cb.checked);
+        tr.querySelector(".gain").innerHTML = delta(price() - pct * p.price);
+        refresh();
+      };
+      cb.onchange = update; px.oninput = update;
+    });
+  }
+  sel.onchange = () => { drawRoster(); drawKpis(); };
+  document.getElementById("simClear").onclick = () => { delete sales[sel.value]; drawRoster(); refresh(); };
+  drawRoster(); refresh();
+})();
 
 /* ---------- mercado ---------- */
 (function(){
