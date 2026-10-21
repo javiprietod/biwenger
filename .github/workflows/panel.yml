@@ -28,19 +28,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Gate (solo una ejecución diaria a partir de las 8:00 de Madrid)
+      - name: Gate (ejecutar siempre)
         id: gate
         run: |
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          hour=$(date +%-H)
-          if [ "$hour" -ge 8 ] && [ ! -f "datos/historial/$(date +%F).json" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Hora local $hour o panel de hoy ya generado: se omite."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
+          echo "run=true" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
         if: steps.gate.outputs.run == 'true'
