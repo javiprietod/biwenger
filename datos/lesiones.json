@@ -1,33 +1,5 @@
 [
  {
-  "jugador": "Brandon Ingram",
-  "donde": [
-   "Mi equipo"
-  ],
-  "equipo": "LAC",
-  "url": "https://www.rotowire.com/basketball/player/brandon-ingram-3861",
-  "estado": "Out",
-  "lesion": "Achilles",
-  "vuelta": "Nov 8",
-  "titular": "Had offseason heel surgery",
-  "fecha": "September 23, 2026",
-  "noticia": "Ingram had surgery on his foot/heel during the offseason, ESPN's Brian Windhorst reported Tuesday."
- },
- {
-  "jugador": "Dailyn Swain",
-  "donde": [
-   "Mi equipo"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/dailyn-swain-6986",
-  "estado": "Out",
-  "lesion": "Illness",
-  "vuelta": "Oct 24",
-  "titular": "Doubtful for Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Swain (illness) is officially doubtful for Wednesday's regular-season opener in Toronto."
- },
- {
   "jugador": "Jusuf Nurkic",
   "donde": [
    "Mercado"
@@ -42,46 +14,11 @@
   "noticia": "Nurkic (foot) is listed as out for Tuesday's preseason game against Denver."
  },
  {
-  "jugador": "Zach Collins",
+  "jugador": "TJ McConnell",
   "donde": [
    "Mercado"
   ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/zach-collins-4162",
-  "estado": "Probable",
-  "lesion": "Toe",
-  "vuelta": "Oct 21",
-  "titular": "Hopeful to play",
-  "fecha": "October 19, 2026",
-  "noticia": "Collins (toe) is hopeful to play Wednesday against the Raptors, K.C. Johnson of Chicago Sports Network reports."
- },
- {
-  "jugador": "Luke Kennard",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "PHX",
-  "url": "https://www.rotowire.com/basketball/player/luke-kennard-4123",
-  "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Oct 21",
-  "titular": "Ramping up in practice",
-  "fecha": "October 19, 2026",
-  "noticia": "Kennard (knee) increased his activity in practice Monday, Duane Rankin of the Arizona Republic reports."
- },
- {
-  "jugador": "Deni Avdija",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "POR",
-  "url": "https://www.rotowire.com/basketball/player/deni-avdija-5152",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 21",
-  "titular": "Efficient in limited run",
-  "fecha": "October 13, 2026",
-  "noticia": "Avdija recorded 26 points (9-13 FG, 2-6 3Pt, 6-6 FT), nine rebounds, four assists and two blocks across 25 minutes in Tuesday's 110-98 preseason win against Sacramento."
+  "error": "no encontrado en RotoWire"
  },
  {
   "jugador": "Kon Knueppel",
@@ -90,124 +27,12 @@
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hamstring",
   "vuelta": "Oct 23",
   "titular": "Ramping up toward return",
   "fecha": "October 18, 2026",
   "noticia": "Head coach Charles Lee said Sunday that Knueppel (hamstring) is still without a timetable for a return, though he's been ramping up and taking more contact in practice, Nick Carboni of WCNC Charlotte reports."
- },
- {
-  "jugador": "Santi Aldama",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "DAL",
-  "url": "https://www.rotowire.com/basketball/player/santi-aldama-5428",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Oct 23",
-  "titular": "Doubtful for Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Aldama (knee) is doubtful for Wednesday's game against Houston, Grant Afseth of DallasHoopsJournal.com reports."
- },
- {
-  "jugador": "Jordan Miller",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "LAC",
-  "url": "https://www.rotowire.com/basketball/player/jordan-miller-6018",
-  "estado": "Out",
-  "lesion": "Shoulder",
-  "vuelta": "Mar 2, 2027",
-  "titular": "Facing uncertain role",
-  "fecha": "August 20, 2026",
-  "noticia": "Miller's path to a larger role became more difficult with the Clippers' acquisition of Max Strus."
- },
- {
-  "jugador": "Vladislav Goldin",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "MIA",
-  "url": "https://www.rotowire.com/basketball/player/vladislav-goldin-6571",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 21",
-  "titular": "Sits out practice",
-  "fecha": "October 20, 2026",
-  "noticia": "Goldin (ankle) did not practice Tuesday, Ira Winderman of the South Florida Sun Sentinel reports."
- },
- {
-  "jugador": "Malik Monk",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/malik-monk-4117",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 21",
-  "titular": "Dealing with ankle soreness",
-  "fecha": "October 16, 2026",
-  "noticia": "Monk (ankle) could miss time to begin the 2026-27 campaign, James Ham of ESPN 1320 Sacramento reports."
- },
- {
-  "jugador": "Nate Ament",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "MIL",
-  "url": "https://www.rotowire.com/basketball/player/nate-ament-6965",
-  "estado": "Probable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 21",
-  "titular": "Inactive Friday",
-  "fecha": "October 16, 2026",
-  "noticia": "Ament (ankle) didn't play in Friday's 128-127 preseason win over the Pacers in overtime."
- },
- {
-  "jugador": "Tarik Biberovic",
-  "donde": [
-   "Rueda"
-  ],
-  "equipo": "DAL",
-  "url": "https://www.rotowire.com/basketball/player/tarik-biberovic-6082",
-  "estado": "Out",
-  "lesion": "Heel",
-  "vuelta": "Oct 23",
-  "titular": "Doubtful for Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Biberovic (heel) is unlikely to play in Wednesday's regular-season opener against the Rockets, per Grant Afseth of DallasHoopsJournal.com."
- },
- {
-  "jugador": "Khalifa Diop",
-  "donde": [
-   "Rueda"
-  ],
-  "equipo": "CLE",
-  "url": "https://www.rotowire.com/basketball/player/khalifa-diop-5681",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Oct 24",
-  "titular": "Not with team",
-  "fecha": "October 13, 2026",
-  "noticia": "Diop (knee) won't play in Tuesday's preseason game against the Magic, Serena Winters of FanDuel Sports Network Ohio reports."
- },
- {
-  "jugador": "Yanic Konan Niederhauser",
-  "donde": [
-   "Me la pela un poco JAJAJAJJAJALOVER"
-  ],
-  "equipo": "LAC",
-  "url": "https://www.rotowire.com/basketball/player/yanic-konan-niederhauser-6616",
-  "estado": "Out",
-  "lesion": "Foot",
-  "vuelta": "Nov 8",
-  "titular": "Shut down for rest of season",
-  "fecha": "March 5, 2026",
-  "noticia": "Niederhauser has been diagnosed with a Lisfranc injury in his right foot and will require surgery. He's been ruled out for the remainder of the 2025-26 season, Joey Linn of SI.com reports."
  },
  {
   "jugador": "Bradley Beal",
@@ -216,26 +41,12 @@
   ],
   "equipo": "LAC",
   "url": "https://www.rotowire.com/basketball/player/bradley-beal-3303",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Knee",
   "vuelta": "Nov 8",
   "titular": "Sits out 5-on-5 work",
   "fecha": "October 7, 2026",
   "noticia": "Beal (knee) isn't participating in five-on-five work but is doing individual player development work, Tomer Azarly of ClutchPoints.com reports. Azarly adds that the Clippers said Wednesday that Beal is continuing to have inflammation managed."
- },
- {
-  "jugador": "Julian Phillips",
-  "donde": [
-   "Impredictables"
-  ],
-  "equipo": "HOU",
-  "url": "https://www.rotowire.com/basketball/player/julian-phillips-5978",
-  "estado": "Questionable",
-  "lesion": "Illness",
-  "vuelta": "Oct 21",
-  "titular": "Converted to two-way deal",
-  "fecha": "October 19, 2026",
-  "noticia": "The Rockets converted Phillips' deal to a two-way contract Monday, per Michael Scotto of HoopsHype.com."
  },
  {
   "jugador": "Dylan Cardwell",
@@ -252,60 +63,18 @@
   "noticia": "Cardwell will miss at least two weeks with a left calf strain, Anthony Slater of ESPN.com reports."
  },
  {
-  "jugador": "Collin Sexton",
+  "jugador": "Malik Monk",
   "donde": [
-   "Shaquille O'Meal"
+   "Galo State Warriors"
   ],
-  "equipo": "LAL",
-  "url": "https://www.rotowire.com/basketball/player/collin-sexton-4412",
-  "estado": "Out",
-  "lesion": "Calf",
-  "vuelta": "Oct 23",
-  "titular": "Questionable for Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Sexton (calf) is questionable for Wednesday's regular-season opener against the Warriors."
- },
- {
-  "jugador": "Isaiah Stewart",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
-  "estado": "Doubtful",
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/malik-monk-4117",
+  "estado": "Questionable",
   "lesion": "Ankle",
-  "vuelta": "Oct 21",
-  "titular": "To miss at least two weeks",
-  "fecha": "October 9, 2026",
-  "noticia": "The Grizzlies announced Friday that Stewart (ankle) will miss at least two weeks."
- },
- {
-  "jugador": "Leonard Miller",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/leonard-miller-5804",
-  "estado": "Probable",
-  "lesion": "Groin",
-  "vuelta": "Oct 21",
-  "titular": "Drops 18 points off bench",
-  "fecha": "October 14, 2026",
-  "noticia": "Miller poured in 18 points (7-11 FG, 3-4 3Pt, 1-1 FT), seven rebounds, two steals and one assist across 19 minutes in Wednesday's 125-104 preseason win over Milwaukee."
- },
- {
-  "jugador": "Jett Howard",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "DAL",
-  "url": "https://www.rotowire.com/basketball/player/jett-howard-5914",
-  "estado": "Doubtful",
-  "lesion": "Calf",
-  "vuelta": "Oct 21",
-  "titular": "Questionable to face Houston",
-  "fecha": "October 20, 2026",
-  "noticia": "Howard (calf) is listed as questionable for Wednesday's game against the Rockets."
+  "vuelta": "Oct 23",
+  "titular": "Doubtful to face LAC",
+  "fecha": "October 21, 2026",
+  "noticia": "Monk (ankle) has been downgraded to doubtful for Wednesday's game against the Clippers."
  },
  {
   "jugador": "Kylan Boswell",
@@ -340,7 +109,7 @@
   "donde": [
    "Dolla"
   ],
-  "equipo": "UTA",
+  "equipo": "Free Agent",
   "url": "https://www.rotowire.com/basketball/player/blake-hinson-6316",
   "estado": "Out",
   "lesion": "Hamstring",
@@ -350,31 +119,87 @@
   "noticia": "Hinson (hamstring) is out for Wednesday's game against the Grizzlies."
  },
  {
-  "jugador": "Jonathan Isaac",
+  "jugador": "Isaiah Stewart",
   "donde": [
-   "Antony Jordan"
+   "Shaquille O'Meal"
   ],
-  "equipo": "ORL",
-  "url": "https://www.rotowire.com/basketball/player/jonathan-isaac-4103",
-  "estado": "Out",
-  "lesion": "Knee",
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
+  "estado": "Questionable",
+  "lesion": "Ankle",
   "vuelta": "Oct 23",
-  "titular": "Sitting once again",
-  "fecha": "October 16, 2026",
-  "noticia": "Isaac (knee) is out for Friday's preseason game against Miami."
+  "titular": "Doubtful for Wednesday",
+  "fecha": "October 20, 2026",
+  "noticia": "Stewart (ankle) is doubtful to play Wednesday against the Jazz."
  },
  {
-  "jugador": "Tobe Awaka",
+  "jugador": "Jett Howard",
   "donde": [
-   "Antony Jordan"
+   "Shaquille O'Meal"
   ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/tobe-awaka-7008",
-  "estado": "Probable",
+  "equipo": "DAL",
+  "url": "https://www.rotowire.com/basketball/player/jett-howard-5914",
+  "estado": "Questionable",
+  "lesion": "Calf",
+  "vuelta": "Oct 23",
+  "titular": "Downgraded to doubtful",
+  "fecha": "October 21, 2026",
+  "noticia": "Howard (calf) is now doubtful for Wednesday against the Rockets."
+ },
+ {
+  "jugador": "Yanic Konan Niederhauser",
+  "donde": [
+   "Me la pela un poco JAJAJAJJAJALOVER"
+  ],
+  "equipo": "LAC",
+  "url": "https://www.rotowire.com/basketball/player/yanic-konan-niederhauser-6616",
+  "estado": "Out",
+  "lesion": "Foot",
+  "vuelta": "Nov 8",
+  "titular": "Shut down for rest of season",
+  "fecha": "March 5, 2026",
+  "noticia": "Niederhauser has been diagnosed with a Lisfranc injury in his right foot and will require surgery. He's been ruled out for the remainder of the 2025-26 season, Joey Linn of SI.com reports."
+ },
+ {
+  "jugador": "Santi Aldama",
+  "donde": [
+   "Vamosnomejodas"
+  ],
+  "equipo": "DAL",
+  "url": "https://www.rotowire.com/basketball/player/santi-aldama-5428",
+  "estado": "Questionable",
   "lesion": "Knee",
-  "vuelta": "Oct 21",
-  "titular": "Ruled out for Friday",
-  "fecha": "October 16, 2026",
-  "noticia": "Awaka (knee) is out for Friday's preseason finale versus Minnesota, K.C. Johnson of Chicago Sports Network reports."
+  "vuelta": "Oct 23",
+  "titular": "Doubtful for Wednesday",
+  "fecha": "October 20, 2026",
+  "noticia": "Aldama (knee) is doubtful for Wednesday's game against Houston, Grant Afseth of DallasHoopsJournal.com reports."
+ },
+ {
+  "jugador": "Oso Ighodaro",
+  "donde": [
+   "Vamosnomejodas"
+  ],
+  "equipo": "PHX",
+  "url": "https://www.rotowire.com/basketball/player/oso-ighodaro-6293",
+  "estado": "Questionable",
+  "lesion": "Hip",
+  "vuelta": "Oct 24",
+  "titular": "Not starting vs. Portland",
+  "fecha": "October 21, 2026",
+  "noticia": "Ighodaro won't start Wednesday's game against the Trail Blazers, Duane Rankin of The Arizona Republic reports."
+ },
+ {
+  "jugador": "Tarik Biberovic",
+  "donde": [
+   "Rueda"
+  ],
+  "equipo": "DAL",
+  "url": "https://www.rotowire.com/basketball/player/tarik-biberovic-6082",
+  "estado": "Questionable",
+  "lesion": "Heel",
+  "vuelta": "Oct 23",
+  "titular": "Doubtful for Wednesday",
+  "fecha": "October 20, 2026",
+  "noticia": "Biberovic (heel) is unlikely to play in Wednesday's regular-season opener against the Rockets, per Grant Afseth of DallasHoopsJournal.com."
  }
 ]
