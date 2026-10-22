@@ -49,7 +49,8 @@ jobs:
             git commit -m "Datos $(date +%F)"
             for attempt in 1 2 3; do
               git fetch --no-tags origin "$target_branch"
-              git rebase "origin/$target_branch"
+              # En un rebase, "theirs" es nuestro commit: los datos recién generados ganan.
+              git rebase -X theirs "origin/$target_branch"
               if git push origin "HEAD:$target_branch"; then
                 break
               fi
