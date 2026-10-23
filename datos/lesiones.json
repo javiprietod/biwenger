@@ -27,12 +27,12 @@
   ],
   "equipo": "PHX",
   "url": "https://www.rotowire.com/basketball/player/oso-ighodaro-6293",
-  "estado": "Questionable",
-  "lesion": "Hip",
-  "vuelta": "Oct 24",
-  "titular": "Not starting vs. Portland",
+  "estado": "Out",
+  "lesion": "Oblique",
+  "vuelta": "Oct 26",
+  "titular": "Doesn't return Wednesday",
   "fecha": "October 21, 2026",
-  "noticia": "Ighodaro won't start Wednesday's game against the Trail Blazers, Duane Rankin of The Arizona Republic reports."
+  "noticia": "Ighodaro (hip) didn't return to Wednesday's 124-83 loss to Portland, Duane Rankin of The Arizona Republic reports. He finished with eight points (4-7 FG, 0-2 FT), three rebounds and three assists over 15 minutes."
  },
  {
   "jugador": "Chris Youngblood",
@@ -97,12 +97,10 @@
   ],
   "equipo": "CHI",
   "url": "https://www.rotowire.com/basketball/player/tobe-awaka-7008",
-  "estado": "Probable",
-  "lesion": "Knee",
-  "vuelta": "Oct 23",
-  "titular": "Available to play",
-  "fecha": "October 21, 2026",
-  "noticia": "Awaka (knee) is available to play Wednesday against the Raptors."
+  "estado": "No aparece en el parte",
+  "titular": "Probable for Friday",
+  "fecha": "October 22, 2026",
+  "noticia": "Awaka (knee) is probable for Friday's game against the Bucks."
  },
  {
   "jugador": "Malik Monk",
@@ -111,12 +109,10 @@
   ],
   "equipo": "SAC",
   "url": "https://www.rotowire.com/basketball/player/malik-monk-4117",
-  "estado": "Probable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 23",
-  "titular": "Ruled out Wednesday",
-  "fecha": "October 21, 2026",
-  "noticia": "Monk (ankle) won't play Wednesday versus the Clippers."
+  "estado": "No aparece en el parte",
+  "titular": "Listed probable for Friday",
+  "fecha": "October 22, 2026",
+  "noticia": "Monk (ankle) is probable for Friday's game against Portland."
  },
  {
   "jugador": "Kylan Boswell",
@@ -139,12 +135,10 @@
   ],
   "equipo": "CHI",
   "url": "https://www.rotowire.com/basketball/player/zach-collins-4162",
-  "estado": "Probable",
-  "lesion": "Quadriceps",
-  "vuelta": "Oct 23",
-  "titular": "Will be on minutes restriction Wednesday",
-  "fecha": "October 21, 2026",
-  "noticia": "Collins (quadriceps) will be limited to 12-16 minutes in Wednesday's game against the Raptors, Joel Lorenzi of The Athletic reports."
+  "estado": "No aparece en el parte",
+  "titular": "Likely to play Friday",
+  "fecha": "October 22, 2026",
+  "noticia": "Collins (quadriceps) is probable for Friday's game against the Bucks."
  },
  {
   "jugador": "Kon Knueppel",
