@@ -14,25 +14,18 @@
   "noticia": "Porzingis (undisclosed) won't travel with the Warriors and remains out indefinitely, Luca Evans of the San Francisco Chronicle reports."
  },
  {
-  "jugador": "TJ McConnell",
-  "donde": [
-   "Mercado"
-  ],
-  "error": "no encontrado en RotoWire"
- },
- {
   "jugador": "Oso Ighodaro",
   "donde": [
    "Mercado"
   ],
   "equipo": "PHX",
   "url": "https://www.rotowire.com/basketball/player/oso-ighodaro-6293",
-  "estado": "Out",
+  "estado": "Doubtful",
   "lesion": "Oblique",
-  "vuelta": "Oct 26",
-  "titular": "Doesn't return Wednesday",
-  "fecha": "October 21, 2026",
-  "noticia": "Ighodaro (hip) didn't return to Wednesday's 124-83 loss to Portland, Duane Rankin of The Arizona Republic reports. He finished with eight points (4-7 FG, 0-2 FT), three rebounds and three assists over 15 minutes."
+  "vuelta": "Oct 24",
+  "titular": "Won't play Saturday",
+  "fecha": "October 23, 2026",
+  "noticia": "Ighodaro has been ruled out for Saturday's game against the Warriors due to an oblique strain, Duane Rankin of The Arizona Republic reports."
  },
  {
   "jugador": "Chris Youngblood",
@@ -47,6 +40,20 @@
   "titular": "Won't play Wednesday",
   "fecha": "October 20, 2026",
   "noticia": "Youngblood is out for Wednesday's regular-season opener against Phoenix due to left ankle soreness."
+ },
+ {
+  "jugador": "Izaiyah Nelson",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "ORL",
+  "url": "https://www.rotowire.com/basketball/player/izaiyah-nelson-7006",
+  "estado": "Out",
+  "lesion": "Ankle",
+  "vuelta": "Nov 18",
+  "titular": "To undergo surgery",
+  "fecha": "July 13, 2026",
+  "noticia": "The Magic announced Monday that Nelson will undergo surgery to repair a fracture in his left ankle, and he's expected to return to basketball activities in 3-4 months."
  },
  {
   "jugador": "Bradley Beal",
@@ -83,36 +90,12 @@
   ],
   "equipo": "MEM",
   "url": "https://www.rotowire.com/basketball/player/cedric-coward-6592",
-  "estado": "Doubtful",
+  "estado": "Out",
   "lesion": "Wrist",
-  "vuelta": "Oct 23",
-  "titular": "Solid on glass in win",
+  "vuelta": "Oct 25",
+  "titular": "Doubtful for Friday",
   "fecha": "October 22, 2026",
-  "noticia": "Coward chipped in seven points (3-6 FG, 1-2 3Pt), seven rebounds, two assists and one block across 28 minutes during Wednesday's 123-103 win over the Jazz."
- },
- {
-  "jugador": "Tobe Awaka",
-  "donde": [
-   "Antony Jordan"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/tobe-awaka-7008",
-  "estado": "No aparece en el parte",
-  "titular": "Probable for Friday",
-  "fecha": "October 22, 2026",
-  "noticia": "Awaka (knee) is probable for Friday's game against the Bucks."
- },
- {
-  "jugador": "Malik Monk",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/malik-monk-4117",
-  "estado": "No aparece en el parte",
-  "titular": "Listed probable for Friday",
-  "fecha": "October 22, 2026",
-  "noticia": "Monk (ankle) is probable for Friday's game against Portland."
+  "noticia": "Coward is doubtful for Friday's game against the Warriors due to a left wrist sprain."
  },
  {
   "jugador": "Kylan Boswell",
@@ -129,30 +112,32 @@
   "noticia": "Boswell is rehabbing a right knee injury, and he's hopeful to be cleared for basketball activities prior to the start of the G League season in late October."
  },
  {
-  "jugador": "Zach Collins",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/zach-collins-4162",
-  "estado": "No aparece en el parte",
-  "titular": "Likely to play Friday",
-  "fecha": "October 22, 2026",
-  "noticia": "Collins (quadriceps) is probable for Friday's game against the Bucks."
- },
- {
   "jugador": "Kon Knueppel",
   "donde": [
    "Vamosnomejodas"
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hamstring",
   "vuelta": "Oct 24",
   "titular": "Ruled out for Wednesday",
   "fecha": "October 20, 2026",
   "noticia": "Knueppel (hamstring) has returned to individual on-court activity but won't play in Wednesday's game against the Nets."
+ },
+ {
+  "jugador": "LeBron James",
+  "donde": [
+   "Me la pela un poco JAJAJAJJAJALOVER"
+  ],
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/lebron-james-2344",
+  "estado": "Questionable",
+  "lesion": "Back",
+  "vuelta": "Oct 24",
+  "titular": "Posts double-double Thursday",
+  "fecha": "October 22, 2026",
+  "noticia": "James posted 17 points (5-14 FG, 1-4 3Pt, 6-7 FT), 10 rebounds, five assists, three steals and a block across 33 minutes in Thursday's 114-106 win over the Cavaliers."
  },
  {
   "jugador": "Yanic Konan Niederhauser",
@@ -167,19 +152,5 @@
   "titular": "Shut down for rest of season",
   "fecha": "March 5, 2026",
   "noticia": "Niederhauser has been diagnosed with a Lisfranc injury in his right foot and will require surgery. He's been ruled out for the remainder of the 2025-26 season, Joey Linn of SI.com reports."
- },
- {
-  "jugador": "Isaiah Stewart",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 23",
-  "titular": "Ruled out Wednesday",
-  "fecha": "October 21, 2026",
-  "noticia": "Stewart (ankle) has been ruled out for Wednesday's game against the Jazz."
  }
 ]
