@@ -1,45 +1,31 @@
 [
  {
-  "jugador": "Kristaps Porzingis",
+  "jugador": "Patrick Williams",
   "donde": [
    "Mercado"
   ],
-  "equipo": "GSW",
-  "url": "https://www.rotowire.com/basketball/player/kristaps-porzingis-3669",
+  "equipo": "CHI",
+  "url": "https://www.rotowire.com/basketball/player/patrick-williams-5122",
   "estado": "Out",
-  "lesion": "Illness",
-  "vuelta": "Dec 1",
-  "titular": "Not traveling with team",
-  "fecha": "October 19, 2026",
-  "noticia": "Porzingis (undisclosed) won't travel with the Warriors and remains out indefinitely, Luca Evans of the San Francisco Chronicle reports."
- },
- {
-  "jugador": "Oso Ighodaro",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "PHX",
-  "url": "https://www.rotowire.com/basketball/player/oso-ighodaro-6293",
-  "estado": "Out",
-  "lesion": "Oblique",
+  "lesion": "Groin",
   "vuelta": "Oct 26",
-  "titular": "Officially doubtful for Saturday",
-  "fecha": "October 23, 2026",
-  "noticia": "Ighodaro (oblique) is listed as doubtful for Saturday's game against Golden State."
+  "titular": "Now questionable for Saturday",
+  "fecha": "October 24, 2026",
+  "noticia": "Williams (groin) is listed as questionable for Saturday's game against the Wizards."
  },
  {
-  "jugador": "Chris Youngblood",
+  "jugador": "Dominick Barlow",
   "donde": [
    "Mercado"
   ],
-  "equipo": "POR",
-  "url": "https://www.rotowire.com/basketball/player/chris-youngblood-6663",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Oct 27",
-  "titular": "Won't play Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Youngblood is out for Wednesday's regular-season opener against Phoenix due to left ankle soreness."
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/dominick-barlow-5670",
+  "estado": "Out",
+  "lesion": "Back",
+  "vuelta": "Nov 2",
+  "titular": "Sits out another practice",
+  "fecha": "October 19, 2026",
+  "noticia": "Barlow (back) did not participate in Monday's practice, according to 76ers reporter Paul Hudrick."
  },
  {
   "jugador": "Izaiyah Nelson",
@@ -98,6 +84,20 @@
   "noticia": "Coward (wrist) has been ruled out for Friday's game against the Warriors."
  },
  {
+  "jugador": "Keegan Murray",
+  "donde": [
+   "latengocomowemby"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/keegan-murray-5699",
+  "estado": "Questionable",
+  "lesion": "Ankle",
+  "vuelta": "Oct 25",
+  "titular": "Bounces back in defeat",
+  "fecha": "October 24, 2026",
+  "noticia": "Murray notched 12 points (4-9 FG, 0-3 3Pt, 4-4 FT), two rebounds, one assist and one steal over 26 minutes during Friday's 128-120 loss to the Trail Blazers."
+ },
+ {
   "jugador": "Kylan Boswell",
   "donde": [
    "Dolla"
@@ -110,6 +110,20 @@
   "titular": "Dealing with knee injury",
   "fecha": "October 5, 2026",
   "noticia": "Boswell is rehabbing a right knee injury, and he's hopeful to be cleared for basketball activities prior to the start of the G League season in late October."
+ },
+ {
+  "jugador": "Zach Edey",
+  "donde": [
+   "Dolla"
+  ],
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/zach-edey-6263",
+  "estado": "Out",
+  "lesion": "Ankle",
+  "vuelta": "Oct 26",
+  "titular": "Just misses double-double Friday",
+  "fecha": "October 24, 2026",
+  "noticia": "Edey posted eight points (4-6 FG, 0-1 FT), 10 rebounds, three assists, two blocks and one steal over 22 minutes during Friday's 111-108 victory over the Warriors."
  },
  {
   "jugador": "Kon Knueppel",
