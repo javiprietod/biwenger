@@ -20,12 +20,12 @@
   ],
   "equipo": "PHX",
   "url": "https://www.rotowire.com/basketball/player/oso-ighodaro-6293",
-  "estado": "Doubtful",
+  "estado": "Out",
   "lesion": "Oblique",
-  "vuelta": "Oct 24",
-  "titular": "Won't play Saturday",
+  "vuelta": "Oct 26",
+  "titular": "Officially doubtful for Saturday",
   "fecha": "October 23, 2026",
-  "noticia": "Ighodaro has been ruled out for Saturday's game against the Warriors due to an oblique strain, Duane Rankin of The Arizona Republic reports."
+  "noticia": "Ighodaro (oblique) is listed as doubtful for Saturday's game against Golden State."
  },
  {
   "jugador": "Chris Youngblood",
@@ -34,7 +34,7 @@
   ],
   "equipo": "POR",
   "url": "https://www.rotowire.com/basketball/player/chris-youngblood-6663",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Ankle",
   "vuelta": "Oct 27",
   "titular": "Won't play Wednesday",
@@ -90,12 +90,12 @@
   ],
   "equipo": "MEM",
   "url": "https://www.rotowire.com/basketball/player/cedric-coward-6592",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Wrist",
   "vuelta": "Oct 25",
-  "titular": "Doubtful for Friday",
-  "fecha": "October 22, 2026",
-  "noticia": "Coward is doubtful for Friday's game against the Warriors due to a left wrist sprain."
+  "titular": "Won't play Friday",
+  "fecha": "October 23, 2026",
+  "noticia": "Coward (wrist) has been ruled out for Friday's game against the Warriors."
  },
  {
   "jugador": "Kylan Boswell",
@@ -118,31 +118,31 @@
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Hamstring",
-  "vuelta": "Oct 24",
-  "titular": "Ruled out for Wednesday",
-  "fecha": "October 20, 2026",
-  "noticia": "Knueppel (hamstring) has returned to individual on-court activity but won't play in Wednesday's game against the Nets."
+  "vuelta": "Oct 26",
+  "titular": "Still out with hamstring strain",
+  "fecha": "October 22, 2026",
+  "noticia": "Knueppel (hamstring) is out for Friday's game against the Hawks."
  },
  {
   "jugador": "LeBron James",
   "donde": [
-   "Me la pela un poco JAJAJAJJAJALOVER"
+   "PENISLOVER"
   ],
   "equipo": "PHI",
   "url": "https://www.rotowire.com/basketball/player/lebron-james-2344",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Back",
-  "vuelta": "Oct 24",
-  "titular": "Posts double-double Thursday",
-  "fecha": "October 22, 2026",
-  "noticia": "James posted 17 points (5-14 FG, 1-4 3Pt, 6-7 FT), 10 rebounds, five assists, three steals and a block across 33 minutes in Thursday's 114-106 win over the Cavaliers."
+  "vuelta": "Oct 25",
+  "titular": "Questionable for Saturday",
+  "fecha": "October 23, 2026",
+  "noticia": "James (back) is questionable for Saturday's game against the Bucks."
  },
  {
   "jugador": "Yanic Konan Niederhauser",
   "donde": [
-   "Me la pela un poco JAJAJAJJAJALOVER"
+   "PENISLOVER"
   ],
   "equipo": "LAC",
   "url": "https://www.rotowire.com/basketball/player/yanic-konan-niederhauser-6616",
