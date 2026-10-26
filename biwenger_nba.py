@@ -45,6 +45,11 @@ INJURIES_PATH = os.path.join(DATA_DIR, "lesiones.json")
 CONFIG_PATH = os.path.join(HERE, "config.json")
 OUTPUT_PATH = os.path.join(HERE, "panel.html")
 
+# Workflow que regenera el panel publicado (lo lanza el botón «Actualizar»).
+GITHUB_REPO = "javiprietod/biwenger"
+GITHUB_WORKFLOW = "panel.yml"
+GITHUB_BRANCH = "main"
+
 DEFAULT_CONFIG = {
     "email": "",
     "password": "",
@@ -671,7 +676,8 @@ def attach_history(model, hist):
 
 def render(model):
     payload = json.dumps(model, ensure_ascii=False).replace("</", "<\\/")
-    page = HTML_TEMPLATE.replace("__DATA__", payload)
+    gh = json.dumps({"repo": GITHUB_REPO, "workflow": GITHUB_WORKFLOW, "ref": GITHUB_BRANCH})
+    page = HTML_TEMPLATE.replace("__GITHUB__", gh).replace("__DATA__", payload)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -718,6 +724,9 @@ header{padding:20px 16px 8px;max-width:1180px;margin:0 auto;display:flex;
   justify-content:space-between;align-items:flex-start;gap:12px}
 h1{margin:0;font-size:22px;letter-spacing:-.01em}
 .sub{color:var(--ink-2);font-size:13px;margin-top:2px}
+.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.actions .msg{font-size:12.5px;color:var(--ink-2)}
+button.tg{cursor:pointer} button.tg:disabled{color:var(--muted);cursor:default}
 nav{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px solid var(--line)}
 nav .in{max-width:1180px;margin:0 auto;padding:0 16px;display:flex;gap:4px;overflow-x:auto}
 nav a{color:var(--ink-2);text-decoration:none;padding:10px 10px;font-size:14px;white-space:nowrap;
@@ -800,7 +809,12 @@ tr.sold td{background:var(--accent-soft)}
     <h1 id="title">Panel Fantasy NBA</h1>
     <div class="sub" id="updated"></div>
   </div>
-  <button class="tg" id="theme" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+  <div class="actions">
+    <span class="msg" id="refreshMsg" role="status"></span>
+    <button class="tg" id="refresh" type="button"
+      title="Vuelve a lanzar el workflow de GitHub Actions que regenera el panel. Mayús+clic para olvidar el token.">Actualizar</button>
+    <button class="tg" id="theme" type="button" aria-label="Cambiar tema claro u oscuro">Tema</button>
+  </div>
 </header>
 <nav><div class="in">
   <a href="#resumen" class="on">Resumen</a><a href="#usuarios">Usuarios</a>
@@ -875,6 +889,7 @@ tr.sold td{background:var(--accent-soft)}
   </section>
 </main>
 
+<script id="github" type="application/json">__GITHUB__</script>
 <script id="data" type="application/json">__DATA__</script>
 <script>
 (function(){
@@ -894,6 +909,45 @@ document.getElementById("theme").onclick = () => {
   root.dataset.theme = dark ? "light" : "dark";
   try { localStorage.setItem("pfn-theme", root.dataset.theme); } catch(e) {}
   drawChart();
+};
+
+/* ---------- actualizar (GitHub Actions) ---------- */
+const GH = JSON.parse(document.getElementById("github").textContent);
+const TOKEN_KEY = "pfn-gh-token";
+const refreshBtn = document.getElementById("refresh"), refreshMsg = document.getElementById("refreshMsg");
+const runsUrl = `https://github.com/${GH.repo}/actions/workflows/${GH.workflow}`;
+function getToken(){ try { return localStorage.getItem(TOKEN_KEY); } catch(e) { return null; } }
+function setToken(t){ try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch(e) {} }
+refreshBtn.onclick = async (ev) => {
+  if (ev.shiftKey){ setToken(null); refreshMsg.textContent = "Token olvidado."; return; }
+  let token = getToken();
+  if (!token){
+    token = (prompt("Token de GitHub (fine-grained, solo este repositorio, permiso Actions: Read and write). "
+      + "Se guarda únicamente en este navegador.") || "").trim();
+    if (!token) return;
+  }
+  refreshBtn.disabled = true;
+  refreshMsg.textContent = "Lanzando…";
+  try {
+    const r = await fetch(`https://api.github.com/repos/${GH.repo}/actions/workflows/${GH.workflow}/dispatches`, {
+      method: "POST",
+      headers: {"Accept": "application/vnd.github+json", "Authorization": "Bearer " + token,
+                "X-GitHub-Api-Version": "2022-11-28"},
+      body: JSON.stringify({ref: GH.ref}),
+    });
+    if (r.status === 204){
+      setToken(token);
+      refreshMsg.innerHTML = `Lanzado. El panel se actualizará en unos minutos (<a href="${runsUrl}" target="_blank" rel="noopener">ver</a>).`;
+    } else {
+      if (r.status === 401 || r.status === 403 || r.status === 404) setToken(null);
+      const body = await r.json().catch(() => ({}));
+      refreshMsg.textContent = `Error ${r.status}: ${body.message || "no se pudo lanzar"}`;
+    }
+  } catch(e) {
+    refreshMsg.textContent = "Error de red: " + e.message;
+  } finally {
+    refreshBtn.disabled = false;
+  }
 };
 
 /* ---------- formato ---------- */

@@ -65,7 +65,7 @@ El ordenador tiene que estar encendido a esa hora; si no, ejecútalo a mano cuan
 - `MAIL_USERNAME` y `MAIL_PASSWORD`: cuenta de Gmail y su contraseña de aplicación.
 - `MAIL_TO`: destinatarios del correo, separados por comas.
 
-Para lanzarlo a mano: pestaña **Actions** → «Panel diario» → **Run workflow**, o `gh workflow run panel.yml`.
+Para lanzarlo a mano: pestaña **Actions** → «Panel diario» → **Run workflow**, o `gh workflow run panel.yml`. También puedes usar el botón **Actualizar** del propio panel: la primera vez te pide un token de GitHub *fine-grained* (solo este repositorio, permiso **Actions: Read and write**) y lo guarda únicamente en ese navegador. Mayús+clic en el botón lo olvida. El repositorio y el workflow que lanza están en las constantes `GITHUB_REPO`, `GITHUB_WORKFLOW` y `GITHUB_BRANCH` al principio de `biwenger_nba.py`.
 
 ## 5. Qué es exacto y qué es estimado
 
