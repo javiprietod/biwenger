@@ -1,19 +1,5 @@
 [
  {
-  "jugador": "Patrick Williams",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/patrick-williams-5122",
-  "estado": "Out",
-  "lesion": "Groin",
-  "vuelta": "Oct 26",
-  "titular": "Now questionable for Saturday",
-  "fecha": "October 24, 2026",
-  "noticia": "Williams (groin) is listed as questionable for Saturday's game against the Wizards."
- },
- {
   "jugador": "Dominick Barlow",
   "donde": [
    "Mercado"
@@ -28,18 +14,39 @@
   "noticia": "Barlow (back) did not participate in Monday's practice, according to 76ers reporter Paul Hudrick."
  },
  {
-  "jugador": "Izaiyah Nelson",
+  "jugador": "Ariel Hukporti",
   "donde": [
    "Mercado"
   ],
-  "equipo": "ORL",
-  "url": "https://www.rotowire.com/basketball/player/izaiyah-nelson-7006",
-  "estado": "Out",
-  "lesion": "Ankle",
-  "vuelta": "Nov 18",
-  "titular": "To undergo surgery",
-  "fecha": "July 13, 2026",
-  "noticia": "The Magic announced Monday that Nelson will undergo surgery to repair a fracture in his left ankle, and he's expected to return to basketball activities in 3-4 months."
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/ariel-hukporti-5778",
+  "estado": "OFS",
+  "lesion": "Achilles",
+  "vuelta": "Oct 1, 2027",
+  "titular": "Fails to return Monday",
+  "fecha": "October 5, 2026",
+  "noticia": "Hukporti didn't return to Monday's preseason game against the Knicks due to an Achilles injury and will undergo an MRI on Tuesday, Adam Aaronson of PhillyVoice.com reports. He didn't score (0-1 FG, 0-1 3Pt) and recorded one assist in five minutes before exiting."
+ },
+ {
+  "jugador": "Alpha Diallo",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "DEN",
+  "url": "https://www.rotowire.com/basketball/player/alpha-diallo-5270",
+  "estado": "Doubtful",
+  "lesion": "Wrist",
+  "vuelta": "Oct 26",
+  "titular": "Ruled out for Saturday",
+  "fecha": "October 24, 2026",
+  "noticia": "Diallo (wrist) won't play Saturday against the Pelicans."
+ },
+ {
+  "jugador": "Mikel Brown Jr.",
+  "donde": [
+   "Mercado"
+  ],
+  "error": "no encontrado en RotoWire"
  },
  {
   "jugador": "Bradley Beal",
@@ -70,18 +77,18 @@
   "noticia": "Cardwell will miss at least two weeks with a left calf strain, Anthony Slater of ESPN.com reports."
  },
  {
-  "jugador": "Cedric Coward",
+  "jugador": "Patrick Williams",
   "donde": [
-   "Antony Jordan"
+   "latengocomowemby"
   ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/cedric-coward-6592",
+  "equipo": "CHI",
+  "url": "https://www.rotowire.com/basketball/player/patrick-williams-5122",
   "estado": "Questionable",
-  "lesion": "Wrist",
-  "vuelta": "Oct 25",
-  "titular": "Won't play Friday",
-  "fecha": "October 23, 2026",
-  "noticia": "Coward (wrist) has been ruled out for Friday's game against the Warriors."
+  "lesion": "Groin",
+  "vuelta": "Oct 26",
+  "titular": "Won't play Saturday",
+  "fecha": "October 24, 2026",
+  "noticia": "Williams (groin) is out for Saturday's game versus the Wizards, Joel Lorenzi of The Athletic reports."
  },
  {
   "jugador": "Keegan Murray",
@@ -90,12 +97,12 @@
   ],
   "equipo": "SAC",
   "url": "https://www.rotowire.com/basketball/player/keegan-murray-5699",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Ankle",
-  "vuelta": "Oct 25",
-  "titular": "Bounces back in defeat",
-  "fecha": "October 24, 2026",
-  "noticia": "Murray notched 12 points (4-9 FG, 0-3 3Pt, 4-4 FT), two rebounds, one assist and one steal over 26 minutes during Friday's 128-120 loss to the Trail Blazers."
+  "vuelta": "Oct 27",
+  "titular": "Downgraded to doubtful",
+  "fecha": "October 25, 2026",
+  "noticia": "Murray (ankle) has been downgraded to doubtful for Sunday's game against Memphis."
  },
  {
   "jugador": "Kylan Boswell",
@@ -112,46 +119,18 @@
   "noticia": "Boswell is rehabbing a right knee injury, and he's hopeful to be cleared for basketball activities prior to the start of the G League season in late October."
  },
  {
-  "jugador": "Zach Edey",
+  "jugador": "Izaiyah Nelson",
   "donde": [
    "Dolla"
   ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/zach-edey-6263",
+  "equipo": "ORL",
+  "url": "https://www.rotowire.com/basketball/player/izaiyah-nelson-7006",
   "estado": "Out",
   "lesion": "Ankle",
-  "vuelta": "Oct 26",
-  "titular": "Just misses double-double Friday",
-  "fecha": "October 24, 2026",
-  "noticia": "Edey posted eight points (4-6 FG, 0-1 FT), 10 rebounds, three assists, two blocks and one steal over 22 minutes during Friday's 111-108 victory over the Warriors."
- },
- {
-  "jugador": "Kon Knueppel",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "CHA",
-  "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Out",
-  "lesion": "Hamstring",
-  "vuelta": "Oct 26",
-  "titular": "Still out with hamstring strain",
-  "fecha": "October 22, 2026",
-  "noticia": "Knueppel (hamstring) is out for Friday's game against the Hawks."
- },
- {
-  "jugador": "LeBron James",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "PHI",
-  "url": "https://www.rotowire.com/basketball/player/lebron-james-2344",
-  "estado": "Out",
-  "lesion": "Back",
-  "vuelta": "Oct 25",
-  "titular": "Questionable for Saturday",
-  "fecha": "October 23, 2026",
-  "noticia": "James (back) is questionable for Saturday's game against the Bucks."
+  "vuelta": "Nov 18",
+  "titular": "To undergo surgery",
+  "fecha": "July 13, 2026",
+  "noticia": "The Magic announced Monday that Nelson will undergo surgery to repair a fracture in his left ankle, and he's expected to return to basketball activities in 3-4 months."
  },
  {
   "jugador": "Yanic Konan Niederhauser",
@@ -166,5 +145,19 @@
   "titular": "Shut down for rest of season",
   "fecha": "March 5, 2026",
   "noticia": "Niederhauser has been diagnosed with a Lisfranc injury in his right foot and will require surgery. He's been ruled out for the remainder of the 2025-26 season, Joey Linn of SI.com reports."
+ },
+ {
+  "jugador": "Kon Knueppel",
+  "donde": [
+   "Vamosnomejodas"
+  ],
+  "equipo": "CHA",
+  "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Oct 28",
+  "titular": "Remains out Saturday",
+  "fecha": "October 24, 2026",
+  "noticia": "Knueppel (hamstring) has been ruled out for Saturday's game against the Heat."
  }
 ]
