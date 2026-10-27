@@ -6,7 +6,7 @@
   "liga_id": null,
   "competicion": "nba",
   "puntuacion": 1,
-  "x_version": "630",
+  "x_version": "632",
   "saldo_inicial": 30000000,
   "posiciones": {
     "1": "Base",

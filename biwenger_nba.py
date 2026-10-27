@@ -26,6 +26,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -62,7 +63,7 @@ DEFAULT_CONFIG = {
     "liga_id": None,
     "competicion": "nba",
     "puntuacion": 1,
-    "x_version": "630",
+    "x_version": "632",
     "saldo_inicial": None,
     "max_movimientos": 3000,
     "puja_max_pct": 0.25,
@@ -115,13 +116,13 @@ class Biwenger:
         self.league_id = None
         self.user_id = None
 
-    def _request(self, url, method="GET", body=None, auth=True):
+    def _request(self, url, method="GET", body=None, auth=True, _retry=True):
         headers = {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json; charset=utf-8",
             "User-Agent": "Mozilla/5.0 (PanelFantasyNBA)",
             "X-Lang": "es",
-            "X-Version": str(self.cfg.get("x_version") or "630"),
+            "X-Version": str(self.cfg.get("x_version") or DEFAULT_CONFIG["x_version"]),
         }
         if auth and self.token:
             headers["Authorization"] = "Bearer " + self.token
@@ -136,7 +137,16 @@ class Biwenger:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 raw = resp.read()
         except urllib.error.HTTPError as e:
-            detail = e.read().decode("utf-8", "replace")[:300]
+            full = e.read().decode("utf-8", "replace")
+            # Biwenger responde "Old version" con la versión actual en el enlace (?cb=NNN):
+            # la adoptamos y reintentamos una vez.
+            m = re.search(r"cb=(\d+)", full) if e.code == 400 and "Old version" in full else None
+            if m and _retry and m.group(1) != headers["X-Version"]:
+                print("  Biwenger pide la versión %s (teníamos %s); reintentando…"
+                      % (m.group(1), headers["X-Version"]))
+                self.cfg["x_version"] = m.group(1)
+                return self._request(url, method, body, auth, _retry=False)
+            detail = full[:300]
             raise ApiError("HTTP %s en %s: %s" % (e.code, short, detail))
         except urllib.error.URLError as e:
             raise ApiError("Sin conexión con %s (%s)" % (short, e.reason))
