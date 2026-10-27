@@ -24,6 +24,7 @@ leen de config.json y nunca salen de tu ordenador salvo hacia Biwenger.
 
 import argparse
 import datetime as dt
+import gzip
 import json
 import os
 import re
@@ -35,6 +36,7 @@ import urllib.request
 import webbrowser
 
 BASE = "https://biwenger.as.com/api/v2"
+APP_URL = "https://biwenger.as.com/"
 PUBLIC_URL = "https://cf.biwenger.com/api/v2/competitions/{comp}/data?lang=es&score={score}"
 PLAYER_URL = "https://cf.biwenger.com/api/v2/players/{comp}/{slug}?lang=es&fields=*,prices&score={score}"
 
@@ -106,6 +108,25 @@ def load_config():
 #  Cliente de la API
 # --------------------------------------------------------------------------- #
 
+def current_app_version(error_body=""):
+    """Versión actual de la web de Biwenger: del enlace ?cb=NNN del error o, si no
+    viene, de la ruta /app/vNNN que carga la página principal."""
+    m = re.search(r"cb=(\d+)", error_body)
+    if m:
+        return m.group(1)
+    try:
+        req = urllib.request.Request(APP_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            raw = resp.read()
+        if raw[:2] == bytes((0x1f, 0x8b)):  # la web responde comprimida aunque no se pida
+            raw = gzip.decompress(raw)
+        html = raw.decode("utf-8", "replace")
+    except (urllib.error.URLError, OSError):
+        return None
+    m = re.search(r"/app/v(\d+)", html)
+    return m.group(1) if m else None
+
+
 class Biwenger:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -138,14 +159,14 @@ class Biwenger:
                 raw = resp.read()
         except urllib.error.HTTPError as e:
             full = e.read().decode("utf-8", "replace")
-            # Biwenger responde "Old version" con la versión actual en el enlace (?cb=NNN):
-            # la adoptamos y reintentamos una vez.
-            m = re.search(r"cb=(\d+)", full) if e.code == 400 and "Old version" in full else None
-            if m and _retry and m.group(1) != headers["X-Version"]:
-                print("  Biwenger pide la versión %s (teníamos %s); reintentando…"
-                      % (m.group(1), headers["X-Version"]))
-                self.cfg["x_version"] = m.group(1)
-                return self._request(url, method, body, auth, _retry=False)
+            # Biwenger responde "Old version": averiguamos la versión actual y reintentamos una vez.
+            if e.code == 400 and "Old version" in full and _retry:
+                version = current_app_version(full)
+                if version and version != headers["X-Version"]:
+                    print("  Biwenger pide la versión %s (teníamos %s); reintentando…"
+                          % (version, headers["X-Version"]))
+                    self.cfg["x_version"] = version
+                    return self._request(url, method, body, auth, _retry=False)
             detail = full[:300]
             raise ApiError("HTTP %s en %s: %s" % (e.code, short, detail))
         except urllib.error.URLError as e:
