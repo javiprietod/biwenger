@@ -35,6 +35,7 @@ import webbrowser
 
 BASE = "https://biwenger.as.com/api/v2"
 PUBLIC_URL = "https://cf.biwenger.com/api/v2/competitions/{comp}/data?lang=es&score={score}"
+PLAYER_URL = "https://cf.biwenger.com/api/v2/players/{comp}/{slug}?lang=es&fields=*,prices&score={score}"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "datos")
@@ -42,6 +43,10 @@ RAW_DIR = os.path.join(DATA_DIR, "raw")
 HIST_DIR = os.path.join(DATA_DIR, "historial")
 START_PATH = os.path.join(DATA_DIR, "inicio.json")
 INJURIES_PATH = os.path.join(DATA_DIR, "lesiones.json")
+YEAR_AGO_PATH = os.path.join(DATA_DIR, "precios_hace_un_ano.json")
+# El historial de precios por jugador tiene un límite de peticiones muy bajo.
+YEAR_AGO_MAX_PER_RUN = 60
+YEAR_AGO_DELAY = 2.0  # segundos entre peticiones
 CONFIG_PATH = os.path.join(HERE, "config.json")
 OUTPUT_PATH = os.path.join(HERE, "panel.html")
 
@@ -358,6 +363,7 @@ def normalize_player(p, teams, positions):
         "points": points,
         "games": games,
         "avg": round(points / games, 1) if games else 0,
+        "lastPts": num(p.get("pointsLastSeason"), None),
         "fitness": fitness,
     }
 
@@ -561,6 +567,7 @@ def build_model(raw, cfg, warnings):
     top_avg = sorted((p for p in players.values() if p["id"] not in owner_of),
                      key=lambda p: -p["avg"])[:15]
     used |= {p["id"] for p in top_avg}
+    used |= {p["id"] for p in players.values() if p["points"] > 0 or (p["lastPts"] or 0) > 0}
 
     return {
         "league": meta.get("liga_nombre") or league.get("name") or "Mi liga",
@@ -621,6 +628,67 @@ def attach_injuries(model, injuries):
             "news": news,
             "url": r.get("url") or "",
         }
+
+
+# --------------------------------------------------------------------------- #
+#  Valor hace un año
+# --------------------------------------------------------------------------- #
+
+def update_year_ago_prices(raw, cfg, warnings):
+    """Guarda el valor de cada jugador hace un año (al empezar la temporada pasada).
+
+    Biwenger solo da el historial de precios jugador a jugador y limita mucho esas
+    peticiones (error 429 durante horas), así que en cada ejecución se descargan como mucho
+    YEAR_AGO_MAX_PER_RUN jugadores, empezando por los que más puntos hicieron, y se guardan
+    para no volver a pedirlos en toda la temporada.
+    """
+    pub = D(raw.get("publico") or {})
+    season = str((pub.get("season") or {}).get("id") or "")
+    cache = load_json(YEAR_AGO_PATH) or {}
+    if cache.get("temporada") != season:
+        ref = dt.date.today() - dt.timedelta(days=365)
+        cache = {"temporada": season, "fecha_ref": ref.isoformat(), "precios": {}}
+    ref = int(cache["fecha_ref"].replace("-", "")[2:])  # Biwenger usa fechas yymmdd
+    prices = cache["precios"]
+    todo = sorted((p for p in as_list(pub.get("players"))
+                   if isinstance(p, dict) and p.get("slug") and num(p.get("pointsLastSeason")) > 0
+                   and str(p.get("id")) not in prices),
+                  key=lambda p: -num(p.get("pointsLastSeason")))
+    if not todo:
+        return
+    print("Valor hace un año (%d pendientes)…" % len(todo))
+    api, done = Biwenger(cfg), 0
+    comp, score = cfg.get("competicion") or "nba", cfg.get("puntuacion") or 1
+    for p in todo[:YEAR_AGO_MAX_PER_RUN]:
+        try:
+            hist = as_list(D(api.get(PLAYER_URL.format(comp=comp, slug=p["slug"], score=score),
+                                     auth=False)).get("prices"))
+        except ApiError as e:
+            print("  ✗ %s: %s" % (p["slug"], str(e)[:80]))
+            break  # casi siempre es el límite de peticiones: se sigue en la próxima ejecución
+        hist = [h for h in hist if isinstance(h, list) and len(h) == 2]
+        entry = {"fecha": None, "precio": None}  # sin historial: no se vuelve a pedir
+        if hist:
+            # Primer precio desde la fecha de referencia (o el último si no hay ninguno)
+            day, price = next((h for h in hist if h[0] >= ref), hist[-1])
+            entry = {"fecha": "20%02d-%02d-%02d" % (day // 10000, day // 100 % 100, day % 100),
+                     "precio": price}
+        prices[str(p["id"])] = entry
+        done += 1
+        time.sleep(YEAR_AGO_DELAY)
+    save_json(YEAR_AGO_PATH, cache)
+    print("  ✓ %d guardados" % done)
+    if len(todo) > done:
+        warnings.append("Falta el valor de hace un año de %d jugadores; se irá completando en "
+                        "las próximas ejecuciones." % (len(todo) - done))
+
+
+def attach_year_ago(model, cache):
+    prices = (cache or {}).get("precios") or {}
+    model["yearAgoRef"] = (cache or {}).get("fecha_ref")
+    for pid, p in model["players"].items():
+        if (prices.get(pid) or {}).get("precio"):
+            p["yearAgo"] = prices[pid]["precio"]
 
 
 # --------------------------------------------------------------------------- #
@@ -820,6 +888,7 @@ tr.sold td{background:var(--accent-soft)}
   <a href="#resumen" class="on">Resumen</a><a href="#usuarios">Usuarios</a>
   <a href="#puja">Puja máxima</a><a href="#mercado">Mercado</a><a href="#plantillas">Plantillas</a>
   <a href="#evolucion">Evolución</a><a href="#jugadores">Subidas y bajadas</a>
+  <a href="#rentabilidad">Rentabilidad</a>
   <a href="#movimientos">Movimientos</a>
 </div></nav>
 <main>
@@ -881,6 +950,13 @@ tr.sold td{background:var(--accent-soft)}
     <h2 style="margin-top:22px">Mejores medias sin dueño en tu liga</h2>
     <p class="note">Para vigilar cuando salgan al mercado.</p>
     <div class="card tbl" id="freeTbl"></div>
+  </section>
+
+  <section id="rentabilidad">
+    <h2>Mejores rentabilidades</h2>
+    <p class="note" id="valueNote"></p>
+    <div class="bar" id="valueFilters"></div>
+    <div class="card tbl" id="valueTbl"></div>
   </section>
 
   <section id="movimientos">
@@ -1299,6 +1375,84 @@ let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(dra
   ], (M.freeTop||[]).map(id => P[id]).filter(Boolean), "avg", -1);
 })();
 
+/* ---------- rentabilidad ---------- */
+(function(){
+  const perM = (pts, price) => pts > 0 && price > 0 ? pts / (price / 1e6) : null;
+  const all = Object.values(P).filter(p => p.points > 0 || p.lastPts > 0).map(p => ({p, id:p.id, name:p.name,
+    price:p.price, points:p.points, games:p.games, avg:p.avg, ppm:perM(p.points, p.price),
+    lastPts:p.lastPts || 0, yearAgo:p.yearAgo ?? null, chgYear: p.yearAgo ? p.price - p.yearAgo : null,
+    lastPpm:perM(p.lastPts, p.yearAgo), repeatPpm:perM(p.lastPts, p.price)}));
+  // Puntos esperados la pasada según el valor de hace un año (recta de mínimos cuadrados).
+  // Un jugador fue rentable si hizo más puntos de los que tocaban por lo que valía.
+  const fit = all.filter(r => r.yearAgo && r.lastPts > 0);
+  let a = 0, b = 0;
+  if (fit.length > 2){
+    const mx = fit.reduce((s,r) => s + r.yearAgo, 0) / fit.length, my = fit.reduce((s,r) => s + r.lastPts, 0) / fit.length;
+    const cov = fit.reduce((s,r) => s + (r.yearAgo - mx) * (r.lastPts - my), 0), vx = fit.reduce((s,r) => s + (r.yearAgo - mx) ** 2, 0);
+    b = vx ? cov / vx : 0; a = my - b * mx;
+  }
+  all.forEach(r => {
+    r.vsExp = fit.length > 2 && r.yearAgo && r.lastPts > 0 ? r.lastPts - (a + b * r.yearAgo) : null;
+    r.bargain = r.vsExp !== null && r.vsExp > 0 && r.chgYear < 0;
+  });
+  document.getElementById("valueNote").textContent = "Pts/M = puntos por cada millón de valor. "
+    + "La temporada pasada se compara con el valor que tenía cada jugador "
+    + (M.yearAgoRef ? `hace un año (${date(M.yearAgoRef)})` : "hace un año")
+    + ": «Vs. esperado» son los puntos que hizo por encima (verde) o por debajo de lo normal para ese valor. "
+    + "«Ganga» = rindió por encima de lo esperado y ahora vale menos que entonces. «Si repite» = puntos de la pasada por millón de su valor actual.";
+
+  const MODES = {now: {label:"Esta temporada", key:"ppm", min:[0,5,10,15,20], def:10, unit:"Media ≥ ",
+                       ok:(r, m) => r.games > 0 && r.avg >= m},
+                 last: {label:"Temporada pasada", key:"lastPpm", min:[0,300,600,1000,1500], def:600, unit:"Pts pasada ≥ ",
+                       ok:(r, m) => r.lastPts > 0 && r.lastPts >= m}};
+  const pos = [...new Set(all.map(r => r.p.pos).filter(Boolean))].sort();
+  const state = {mode:"now", min:MODES.now.def, pos:null, who:"all", bargain:false};
+  const owner = M.owner || {};
+  const bar = document.getElementById("valueFilters");
+  const sep = '<span style="width:8px"></span>';
+  function chips(){
+    const md = MODES[state.mode];
+    bar.innerHTML = Object.entries(MODES).map(([k,m]) =>
+      `<button class="chip ${state.mode===k?"on":""}" data-m="${k}">${m.label}</button>`).join("") + sep +
+      `<select data-min aria-label="Mínimo">${md.min.map(v => `<option value="${v}" ${v===state.min?"selected":""}>${md.unit}${v}</option>`).join("")}</select>` + sep +
+      [["all","Todos"],["free","Sin dueño"],["mine","Míos"]].map(([k,l]) =>
+      `<button class="chip ${state.who===k?"on":""}" data-w="${k}">${l}</button>`).join("") + sep +
+      [null, ...pos].map(p => `<button class="chip ${state.pos===p?"on":""}" data-p="${p ?? ""}">${p ?? "Todas"}</button>`).join("") + sep +
+      `<button class="chip ${state.bargain?"on":""}" data-b="1">Solo gangas</button>`;
+    bar.querySelectorAll("[data-m]").forEach(b => b.onclick = () => { state.mode = b.dataset.m; state.min = MODES[state.mode].def; chips(); draw(); });
+    bar.querySelector("[data-min]").onchange = e => { state.min = +e.target.value; draw(); };
+    bar.querySelectorAll("[data-w]").forEach(b => b.onclick = () => { state.who = b.dataset.w; chips(); draw(); });
+    bar.querySelectorAll("[data-p]").forEach(b => b.onclick = () => { state.pos = b.dataset.p || null; chips(); draw(); });
+    bar.querySelector("[data-b]").onclick = () => { state.bargain = !state.bargain; chips(); draw(); };
+  }
+  function draw(){
+    const md = MODES[state.mode];
+    const f = all.filter(r => md.ok(r, state.min) && (!state.pos || r.p.pos === state.pos) && (!state.bargain || r.bargain) &&
+      (state.who === "all" || (state.who === "free" ? !owner[r.id] : owner[r.id] === M.me)));
+    // Los 60 con más puntos por millón según el modo
+    const score = r => r[md.key] ?? (state.mode === "last" ? r.repeatPpm : null) ?? -1;
+    const top = f.sort((x,y) => score(y) - score(x)).slice(0, 60);
+    const n1 = v => v === null ? "—" : nf(1).format(v);
+    table(document.getElementById("valueTbl"), [
+      {key:"name", label:"Jugador", fmt:r => player(r.p) + (r.bargain ? ' <span class="tag">Ganga</span>' : "")},
+      {key:"status", label:"Estado", fmt:r => status(r.p), sort:r => statusSort(r.p)},
+      {key:"own", label:"Dueño", fmt:r => ownerName(r.id), sort:r => byId[owner[r.id]]?.name || "~"},
+      {key:"price", label:"Valor", num:true, fmt:r => money(r.price)},
+      {key:"points", label:"Puntos", num:true, fmt:r => nf(0).format(r.points)},
+      {key:"avg", label:"Media", num:true, fmt:r => nf(1).format(r.avg)},
+      {key:"ppm", label:"Pts/M", num:true, fmt:r => state.mode === "now" ? `<b>${n1(r.ppm)}</b>` : n1(r.ppm)},
+      {key:"lastPts", label:"Pts pasada", num:true, fmt:r => r.lastPts ? nf(0).format(r.lastPts) : "—"},
+      {key:"yearAgo", label:"Valor hace 1 año", num:true, fmt:r => money(r.yearAgo)},
+      {key:"chgYear", label:"Var. 1 año", num:true, fmt:r => delta(r.chgYear)},
+      {key:"lastPpm", label:"Pts/M pasada", num:true, fmt:r => state.mode === "last" ? `<b>${n1(r.lastPpm)}</b>` : n1(r.lastPpm)},
+      {key:"vsExp", label:"Vs. esperado", num:true, fmt:r => r.vsExp === null ? "—"
+        : `<span class="${r.vsExp > 0 ? "up" : "down"}">${r.vsExp > 0 ? "+" : "−"}${nf(0).format(Math.abs(r.vsExp))}</span>`},
+      {key:"repeatPpm", label:"Si repite", num:true, fmt:r => n1(r.repeatPpm)},
+    ], top, md.key, -1, r => owner[r.id] === M.me ? "me" : "");
+  }
+  chips(); draw();
+})();
+
 /* ---------- movimientos ---------- */
 (function(){
   const TYPE = {transfer:"Traspaso", market:"Mercado", exchange:"Intercambio", loan:"Cesión", loanReturn:"Fin cesión", adminTransfer:"Admin"};
@@ -1364,12 +1518,14 @@ def main():
         save_raw(raw)
         print("Consultando lesiones en RotoWire…")
         update_injuries(warnings)
+        update_year_ago_prices(raw, cfg, warnings)
 
     model = build_model(raw, cfg, warnings)
     if not args.offline:
         save_snapshot(model)
     attach_history(model, load_history())
     attach_injuries(model, load_json(INJURIES_PATH))
+    attach_year_ago(model, load_json(YEAR_AGO_PATH))
     render(model)
     print("\nPanel generado: %s" % OUTPUT_PATH)
     for w in warnings:

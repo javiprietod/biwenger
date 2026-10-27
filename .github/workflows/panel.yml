@@ -44,7 +44,7 @@ jobs:
           target_branch="${GITHUB_REF_NAME:-main}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datos/historial datos/inicio.json datos/lesiones.json
+          git add datos/historial datos/inicio.json datos/lesiones.json datos/precios_hace_un_ano.json
           if ! git diff --cached --quiet; then
             git commit -m "Datos $(date +%F)"
             for attempt in 1 2 3; do

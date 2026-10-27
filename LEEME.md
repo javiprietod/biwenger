@@ -67,14 +67,20 @@ El ordenador tiene que estar encendido a esa hora; si no, ejecútalo a mano cuan
 
 Para lanzarlo a mano: pestaña **Actions** → «Panel diario» → **Run workflow**, o `gh workflow run panel.yml`. También puedes usar el botón **Actualizar** del propio panel: la primera vez te pide un token de GitHub *fine-grained* (solo este repositorio, permiso **Actions: Read and write**) y lo guarda únicamente en ese navegador. Mayús+clic en el botón lo olvida. El repositorio y el workflow que lanza están en las constantes `GITHUB_REPO`, `GITHUB_WORKFLOW` y `GITHUB_BRANCH` al principio de `biwenger_nba.py`.
 
-## 5. Qué es exacto y qué es estimado
+## 5. Rentabilidad
+
+La sección «Mejores rentabilidades» ordena a los jugadores por puntos por millón de valor (Pts/M), esta temporada o la pasada, con un mínimo de media o de puntos para que no la copen los jugadores de 150 k€ que casi no juegan. Para la temporada pasada compara sus puntos con el valor que tenía hace un año: «Vs. esperado» indica cuántos puntos hizo por encima o por debajo de lo normal para ese valor, y «Ganga» marca a los que rindieron por encima y ahora valen menos.
+
+Biwenger solo da el valor de hace un año jugador a jugador y corta enseguida con error 429 si se piden muchos. Por eso cada ejecución descarga como mucho 60 (empezando por los que más puntos hicieron) y los guarda en `datos/precios_hace_un_ano.json`. Los ~480 jugadores se completan en unos días. Se ajusta con `YEAR_AGO_MAX_PER_RUN` y `YEAR_AGO_DELAY` al principio de `biwenger_nba.py`.
+
+## 6. Qué es exacto y qué es estimado
 
 - **Exacto:** tu saldo, plantillas, valores, variaciones, mercado y clasificación.
 - **Puja máxima:** saldo + 25 % del valor del equipo − pujas abiertas. La tuya es la que da Biwenger; la de los rivales sale de su saldo estimado y no descuenta sus pujas abiertas, que no son públicas. En «¿Y si vende…?» puedes marcar jugadores de cualquier usuario y ver cómo cambiaría su puja máxima: vender por su valor la sube un 75 % de ese valor (entra el dinero, pero el equipo vale menos). Si tu liga usa otro porcentaje, cámbialo con `puja_max_pct` en `config.json` (por ejemplo `0.25`).
 - **Estimado:** el saldo de los rivales. Biwenger no lo publica, así que se calcula con los fichajes, ventas y primas por jornada del tablón de la liga, tomando tu saldo real como referencia. Solo cuenta lo ocurrido desde el último reinicio de la liga.
 - Tras un reinicio cada uno recibe un equipo distinto, así que lo que todos comparten es el **patrimonio** (saldo + valor del equipo), no el saldo. El valor de cada equipo al reiniciar se guarda en `datos/inicio.json` la primera vez que se ejecuta el script; no lo borres. Si conoces el patrimonio inicial (contando las primas del primer día), ponlo en `saldo_inicial`: sirve de control frente a tu saldo y de respaldo si tu saldo no se puede descargar.
 
-## 6. Si algo falla
+## 7. Si algo falla
 
 - **Error 401/403:** sesión inválida. Revisa email y contraseña o copia de nuevo el token.
 - **Error 400 o 426:** Biwenger pide una versión más reciente. En la pestaña Red del navegador, mira la cabecera `X-Version` de cualquier petición y ponla en `x_version`.
