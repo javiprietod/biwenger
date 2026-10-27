@@ -1,0 +1,71 @@
+{
+ "fecha": "2026-10-27",
+ "usuarios": {
+  "13244868": {
+   "nombre": "Antony Jordan",
+   "valor": 19960000.0,
+   "saldo": 11510100.0,
+   "puntos": 139.0
+  },
+  "12222488": {
+   "nombre": "Impredictables",
+   "valor": 15170000.0,
+   "saldo": 17030000.0,
+   "puntos": 130.0
+  },
+  "12226995": {
+   "nombre": "latengocomowemby",
+   "valor": 20620000.0,
+   "saldo": 8534178.0,
+   "puntos": 128.0
+  },
+  "12222960": {
+   "nombre": "Shaquille O'Meal",
+   "valor": 24640000.0,
+   "saldo": 188500.0,
+   "puntos": 128.0
+  },
+  "10632855": {
+   "nombre": "Galo State Warriors",
+   "valor": 10430000.0,
+   "saldo": 21410845.0,
+   "puntos": 122.0
+  },
+  "10632856": {
+   "nombre": "Celtics",
+   "valor": 16800000.0,
+   "saldo": 12371225.0,
+   "puntos": 119.0
+  },
+  "13241191": {
+   "nombre": "Dolla",
+   "valor": 26620000.0,
+   "saldo": 3069820.0,
+   "puntos": 114.0
+  },
+  "10632877": {
+   "nombre": "Rueda",
+   "valor": 27900000.0,
+   "saldo": 70800.0,
+   "puntos": 90.0
+  },
+  "10632952": {
+   "nombre": "PENISLOVER",
+   "valor": 27070000.0,
+   "saldo": 274200.0,
+   "puntos": 78.0
+  },
+  "14492327": {
+   "nombre": "Pritiii69",
+   "valor": 26200000.0,
+   "saldo": -524412.0,
+   "puntos": 66.0
+  },
+  "10632844": {
+   "nombre": "Vamosnomejodas",
+   "valor": 21560000.0,
+   "saldo": 5053500.0,
+   "puntos": 64.0
+  }
+ }
+}

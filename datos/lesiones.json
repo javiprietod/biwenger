@@ -1,17 +1,17 @@
 [
  {
-  "jugador": "Dominick Barlow",
+  "jugador": "Kristaps Porzingis",
   "donde": [
    "Mercado"
   ],
-  "equipo": "PHI",
-  "url": "https://www.rotowire.com/basketball/player/dominick-barlow-5670",
+  "equipo": "GSW",
+  "url": "https://www.rotowire.com/basketball/player/kristaps-porzingis-3669",
   "estado": "Out",
-  "lesion": "Back",
-  "vuelta": "Nov 2",
-  "titular": "Sits out another practice",
+  "lesion": "Illness",
+  "vuelta": "Dec 1",
+  "titular": "Not traveling with team",
   "fecha": "October 19, 2026",
-  "noticia": "Barlow (back) did not participate in Monday's practice, according to 76ers reporter Paul Hudrick."
+  "noticia": "Porzingis (undisclosed) won't travel with the Warriors and remains out indefinitely, Luca Evans of the San Francisco Chronicle reports."
  },
  {
   "jugador": "Ariel Hukporti",
@@ -34,19 +34,26 @@
   ],
   "equipo": "DEN",
   "url": "https://www.rotowire.com/basketball/player/alpha-diallo-5270",
-  "estado": "Doubtful",
+  "estado": "Questionable",
   "lesion": "Wrist",
-  "vuelta": "Oct 26",
-  "titular": "Ruled out for Saturday",
-  "fecha": "October 24, 2026",
-  "noticia": "Diallo (wrist) won't play Saturday against the Pelicans."
+  "vuelta": "Oct 28",
+  "titular": "Doubtful to play Monday",
+  "fecha": "October 25, 2026",
+  "noticia": "Diallo (wrist) is doubtful for Monday's game against the Warriors."
  },
  {
-  "jugador": "Mikel Brown Jr.",
+  "jugador": "Jaxson Hayes",
   "donde": [
-   "Mercado"
+   "Antony Jordan"
   ],
-  "error": "no encontrado en RotoWire"
+  "equipo": "UTA",
+  "url": "https://www.rotowire.com/basketball/player/jaxson-hayes-4771",
+  "estado": "Questionable",
+  "lesion": "Shoulder",
+  "vuelta": "Oct 28",
+  "titular": "Questionable to face Memphis",
+  "fecha": "October 26, 2026",
+  "noticia": "Hayes is listed as questionable for Monday's game against the Grizzlies due to right shoulder soreness, Shreyas Laddha of The Salt Lake Tribune reports."
  },
  {
   "jugador": "Bradley Beal",
@@ -71,10 +78,10 @@
   "url": "https://www.rotowire.com/basketball/player/dylan-cardwell-6638",
   "estado": "Out",
   "lesion": "Calf",
-  "vuelta": "Nov 2",
-  "titular": "To miss at least two weeks",
-  "fecha": "October 13, 2026",
-  "noticia": "Cardwell will miss at least two weeks with a left calf strain, Anthony Slater of ESPN.com reports."
+  "vuelta": "Nov 6",
+  "titular": "Set to miss opening stretch",
+  "fecha": "October 15, 2026",
+  "noticia": "Cardwell (calf) is expected to miss at least the first five or six games of the regular season, with a longer absence possible, Frankie Cartoscelli of KHTK Sactown Sports 1140 reports."
  },
  {
   "jugador": "Patrick Williams",
@@ -85,24 +92,38 @@
   "url": "https://www.rotowire.com/basketball/player/patrick-williams-5122",
   "estado": "Questionable",
   "lesion": "Groin",
-  "vuelta": "Oct 26",
-  "titular": "Won't play Saturday",
-  "fecha": "October 24, 2026",
-  "noticia": "Williams (groin) is out for Saturday's game versus the Wizards, Joel Lorenzi of The Athletic reports."
+  "vuelta": "Oct 28",
+  "titular": "Questionable for Monday",
+  "fecha": "October 25, 2026",
+  "noticia": "Williams (groin) is listed as questionable for Monday's game against Boston."
  },
  {
-  "jugador": "Keegan Murray",
+  "jugador": "Dominick Barlow",
   "donde": [
-   "latengocomowemby"
+   "Celtics"
   ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/keegan-murray-5699",
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/dominick-barlow-5670",
   "estado": "Out",
-  "lesion": "Ankle",
-  "vuelta": "Oct 27",
-  "titular": "Downgraded to doubtful",
-  "fecha": "October 25, 2026",
-  "noticia": "Murray (ankle) has been downgraded to doubtful for Sunday's game against Memphis."
+  "lesion": "Back",
+  "vuelta": "Nov 2",
+  "titular": "Sits out another practice",
+  "fecha": "October 19, 2026",
+  "noticia": "Barlow (back) did not participate in Monday's practice, according to 76ers reporter Paul Hudrick."
+ },
+ {
+  "jugador": "Lauri Markkanen",
+  "donde": [
+   "Dolla"
+  ],
+  "equipo": "UTA",
+  "url": "https://www.rotowire.com/basketball/player/lauri-markkanen-4119",
+  "estado": "Questionable",
+  "lesion": "Wrist",
+  "vuelta": "Oct 28",
+  "titular": "Iffy to return vs. Memphis",
+  "fecha": "October 26, 2026",
+  "noticia": "Markkanen is questionable to return to Monday's game against Memphis due to a right wrist injury."
  },
  {
   "jugador": "Kylan Boswell",
@@ -133,6 +154,20 @@
   "noticia": "The Magic announced Monday that Nelson will undergo surgery to repair a fracture in his left ankle, and he's expected to return to basketball activities in 3-4 months."
  },
  {
+  "jugador": "Andrew Nembhard",
+  "donde": [
+   "Rueda"
+  ],
+  "equipo": "IND",
+  "url": "https://www.rotowire.com/basketball/player/andrew-nembhard-5679",
+  "estado": "Questionable",
+  "lesion": "Back",
+  "vuelta": "Oct 28",
+  "titular": "Questionable for Monday",
+  "fecha": "October 26, 2026",
+  "noticia": "Nembhard (neck) is questionable for Monday's game against the Bucks."
+ },
+ {
   "jugador": "Yanic Konan Niederhauser",
   "donde": [
    "PENISLOVER"
@@ -155,9 +190,9 @@
   "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
   "estado": "Out",
   "lesion": "Hamstring",
-  "vuelta": "Oct 28",
-  "titular": "Remains out Saturday",
-  "fecha": "October 24, 2026",
-  "noticia": "Knueppel (hamstring) has been ruled out for Saturday's game against the Heat."
+  "vuelta": "Oct 31",
+  "titular": "Ruled out for Monday",
+  "fecha": "October 25, 2026",
+  "noticia": "Knueppel (hamstring) has been ruled out for Monday's game against the Wizards."
  }
 ]
