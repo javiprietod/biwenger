@@ -1,17 +1,10 @@
 [
  {
-  "jugador": "Luka Doncic",
+  "jugador": "Robert Williams III",
   "donde": [
    "Mi equipo"
   ],
-  "equipo": "LAL",
-  "url": "https://www.rotowire.com/basketball/player/luka-doncic-4396",
-  "estado": "Questionable",
-  "lesion": "Back",
-  "vuelta": "Oct 30",
-  "titular": "Drills six threes in defeat",
-  "fecha": "October 28, 2026",
-  "noticia": "Doncic produced 41 points (12-22 FG, 6-15 3Pt, 11-13 FT), five rebounds, nine assists and one block in 37 minutes during Tuesday's 136-129 loss to the Trail Blazers."
+  "error": "no encontrado en RotoWire"
  },
  {
   "jugador": "Jimmy Butler",
@@ -28,6 +21,27 @@
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
  },
  {
+  "jugador": "TJ McConnell",
+  "donde": [
+   "Mercado"
+  ],
+  "error": "no encontrado en RotoWire"
+ },
+ {
+  "jugador": "Dejounte Murray",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "NOP",
+  "url": "https://www.rotowire.com/basketball/player/dejounte-murray-3856",
+  "estado": "Questionable",
+  "lesion": "Personal",
+  "vuelta": "Oct 31",
+  "titular": "Strong start continues",
+  "fecha": "October 29, 2026",
+  "noticia": "Murray produced 10 points (4-11 FG, 0-2 3Pt, 2-2 FT), eight rebounds, five assists and one steal in 30 minutes during Wednesday's 104-91 loss to the Nuggets."
+ },
+ {
   "jugador": "Rui Hachimura",
   "donde": [
    "Mercado"
@@ -37,23 +51,37 @@
   "estado": "Questionable",
   "lesion": "Quadriceps",
   "vuelta": "Oct 30",
-  "titular": "Scores 16 points in loss against former team",
-  "fecha": "October 24, 2026",
-  "noticia": "Hachimura totaled 16 points (5-14 FG, 3-6 3Pt, 3-4 FT), six rebounds, one assist and two steals over 33 minutes during Friday's 125-117 loss to the Lakers."
+  "titular": "Ruled out for Wednesday",
+  "fecha": "October 27, 2026",
+  "noticia": "Hachimura (quadriceps) has been ruled out for Wednesday's game against the Lakers, Joey Linn of SI.com reports."
  },
  {
-  "jugador": "Justin Champagnie",
+  "jugador": "Ja Morant",
   "donde": [
    "Mercado"
   ],
-  "equipo": "WAS",
-  "url": "https://www.rotowire.com/basketball/player/justin-champagnie-5371",
-  "estado": "Out",
-  "lesion": "Foot",
-  "vuelta": "Feb 25, 2027",
-  "titular": "Ruled out for Wednesday",
-  "fecha": "October 27, 2026",
-  "noticia": "Champagnie (foot) is out for Wednesday's game versus Cleveland."
+  "equipo": "POR",
+  "url": "https://www.rotowire.com/basketball/player/ja-morant-4761",
+  "estado": "Questionable",
+  "lesion": "Hamstring",
+  "vuelta": "Oct 31",
+  "titular": "Solid down the stretch",
+  "fecha": "October 28, 2026",
+  "noticia": "Morant accumulated 23 points (9-13 FG, 1-1 3Pt, 4-4 FT) and four assists over 31 minutes during Tuesday's 136-129 win over the Lakers."
+ },
+ {
+  "jugador": "Aaron Nesmith",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "IND",
+  "url": "https://www.rotowire.com/basketball/player/aaron-nesmith-5120",
+  "estado": "Probable",
+  "lesion": "Hamstring",
+  "vuelta": "Oct 30",
+  "titular": "Continues to ramp up Wednesday",
+  "fecha": "October 28, 2026",
+  "noticia": "Nesmith racked up 18 points (5-16 FG, 3-9 3Pt, 5-5 FT), two rebounds, one assist and two steals over 27 minutes during Wednesday's 114-109 loss to the 76ers."
  },
  {
   "jugador": "Cason Wallace",
@@ -70,34 +98,6 @@
   "noticia": "Wallace (shoulder) is out for Monday's game versus the Suns."
  },
  {
-  "jugador": "Ben Sheppard",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "IND",
-  "url": "https://www.rotowire.com/basketball/player/ben-sheppard-6033",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Jan 2, 2027",
-  "titular": "Will undergo surgery",
-  "fecha": "October 26, 2026",
-  "noticia": "Sheppard is scheduled for surgery to repair a torn meniscus in his left knee Wednesday, Dustin Dopirak of The Indianapolis Star reports."
- },
- {
-  "jugador": "Spencer Jones",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "DEN",
-  "url": "https://www.rotowire.com/basketball/player/spencer-jones-6315",
-  "estado": "Out",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 2",
-  "titular": "Nearing return to action",
-  "fecha": "October 26, 2026",
-  "noticia": "Jones (hamstring) is progressing in his recovery and could be back with the team within the next three games, Vinny Benedetto of The Denver Gazette reports."
- },
- {
   "jugador": "Tobe Awaka",
   "donde": [
    "Antony Jordan"
@@ -107,9 +107,9 @@
   "estado": "Questionable",
   "lesion": "Ankle",
   "vuelta": "Oct 30",
-  "titular": "Iffy for Wednesday",
-  "fecha": "October 27, 2026",
-  "noticia": "Awaka (ankle) is questionable for Wednesday's game against the Knicks."
+  "titular": "Won't play Wednesday",
+  "fecha": "October 28, 2026",
+  "noticia": "Awaka (ankle) is out for Wednesday's game against the Knicks, Joel Lorenzi of The Athletic reports."
  },
  {
   "jugador": "Bradley Beal",
@@ -124,6 +124,34 @@
   "titular": "Sits out 5-on-5 work",
   "fecha": "October 7, 2026",
   "noticia": "Beal (knee) isn't participating in five-on-five work but is doing individual player development work, Tomer Azarly of ClutchPoints.com reports. Azarly adds that the Clippers said Wednesday that Beal is continuing to have inflammation managed."
+ },
+ {
+  "jugador": "Reed Sheppard",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "HOU",
+  "url": "https://www.rotowire.com/basketball/player/reed-sheppard-6257",
+  "estado": "Out",
+  "lesion": "Back",
+  "vuelta": "Oct 31",
+  "titular": "Shifting to bench",
+  "fecha": "October 26, 2026",
+  "noticia": "Sheppard will come off the bench for Monday's game against the Hawks, Lachard Binkley of SI.com reports."
+ },
+ {
+  "jugador": "Quinten Post",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/quinten-post-6299",
+  "estado": "Questionable",
+  "lesion": "Ankle",
+  "vuelta": "Oct 31",
+  "titular": "Doubtful to return Thursday",
+  "fecha": "October 29, 2026",
+  "noticia": "Post is doubtful to return to Thursday's game against the Trail Blazers due to a right ankle injury."
  },
  {
   "jugador": "Dylan Cardwell",
@@ -149,9 +177,23 @@
   "estado": "Questionable",
   "lesion": "Groin",
   "vuelta": "Oct 30",
-  "titular": "Questionable for Wednesday",
-  "fecha": "October 27, 2026",
-  "noticia": "Williams (groin) is questionable for Wednesday's game against the Knicks."
+  "titular": "Won't play Wednesday",
+  "fecha": "October 28, 2026",
+  "noticia": "Williams (adductor) won't play in Wednesday's game against the Knicks, Joel Lorenzi of The Athletic reports."
+ },
+ {
+  "jugador": "Spencer Jones",
+  "donde": [
+   "latengocomowemby"
+  ],
+  "equipo": "DEN",
+  "url": "https://www.rotowire.com/basketball/player/spencer-jones-6315",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 2",
+  "titular": "Nearing return to action",
+  "fecha": "October 26, 2026",
+  "noticia": "Jones (hamstring) is progressing in his recovery and could be back with the team within the next three games, Vinny Benedetto of The Denver Gazette reports."
  },
  {
   "jugador": "Dominick Barlow",
@@ -196,18 +238,32 @@
   "noticia": "Boswell is rehabbing a right knee injury, and he's hopeful to be cleared for basketball activities prior to the start of the G League season in late October."
  },
  {
-  "jugador": "Izaiyah Nelson",
+  "jugador": "Jordan Poole",
   "donde": [
-   "Dolla"
+   "Rueda"
   ],
-  "equipo": "ORL",
-  "url": "https://www.rotowire.com/basketball/player/izaiyah-nelson-7006",
-  "estado": "Out",
+  "equipo": "NOP",
+  "url": "https://www.rotowire.com/basketball/player/jordan-poole-4791",
+  "estado": "Questionable",
   "lesion": "Ankle",
-  "vuelta": "Nov 18",
-  "titular": "To undergo surgery",
-  "fecha": "July 13, 2026",
-  "noticia": "The Magic announced Monday that Nelson will undergo surgery to repair a fracture in his left ankle, and he's expected to return to basketball activities in 3-4 months."
+  "vuelta": "Oct 31",
+  "titular": "Downgraded to doubtful",
+  "fecha": "October 29, 2026",
+  "noticia": "Poole (ankle) is now doubtful for Thursday against the Kings."
+ },
+ {
+  "jugador": "Andrew Nembhard",
+  "donde": [
+   "Rueda"
+  ],
+  "equipo": "IND",
+  "url": "https://www.rotowire.com/basketball/player/andrew-nembhard-5679",
+  "estado": "Probable",
+  "lesion": "Neck",
+  "vuelta": "Oct 30",
+  "titular": "Returning Wednesday",
+  "fecha": "October 28, 2026",
+  "noticia": "Nembhard (neck) will play in Wednesday's game against the 76ers, Tony East of Forbes.com reports."
  },
  {
   "jugador": "Yanic Konan Niederhauser",
@@ -219,9 +275,9 @@
   "estado": "Out",
   "lesion": "Foot",
   "vuelta": "Nov 8",
-  "titular": "Won't be ready to begin season",
-  "fecha": "September 28, 2026",
-  "noticia": "Niederhauser (foot) won't be ready for the start of the season, Law Murray of The Athletic reports."
+  "titular": "'Making progress' toward return",
+  "fecha": "October 28, 2026",
+  "noticia": "Niederhauser (foot) remains out for Wednesday's game against the Lakers. He also won't travel with the team for the upcoming two-game road trip in Minnesota and Golden State, Ohm Youngmisuk of ESPN.com reports."
  },
  {
   "jugador": "Kon Knueppel",
@@ -233,8 +289,8 @@
   "estado": "Out",
   "lesion": "Hamstring",
   "vuelta": "Nov 2",
-  "titular": "Ruled out for Monday",
-  "fecha": "October 25, 2026",
-  "noticia": "Knueppel (hamstring) has been ruled out for Monday's game against the Wizards."
+  "titular": "No timeline for return",
+  "fecha": "October 26, 2026",
+  "noticia": "Knueppel (hamstring) is without a timetable for a return, Rod Boone of The Charlotte Observer reports."
  }
 ]
