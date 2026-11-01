@@ -1,12 +1,5 @@
 [
  {
-  "jugador": "Robert Williams III",
-  "donde": [
-   "Mi equipo"
-  ],
-  "error": "no encontrado en RotoWire"
- },
- {
   "jugador": "Kawhi Leonard",
   "donde": [
    "Mercado"
@@ -29,17 +22,24 @@
   "url": "https://www.rotowire.com/basketball/player/ivica-zubac-3888",
   "estado": "Out",
   "lesion": "Ankle",
-  "vuelta": "Nov 1",
-  "titular": "Won't play Wednesday",
-  "fecha": "October 27, 2026",
-  "noticia": "Zubac (ankle) is out for Wednesday's game against the 76ers."
+  "vuelta": "Nov 2",
+  "titular": "Still out with ankle sprain",
+  "fecha": "October 29, 2026",
+  "noticia": "Zubac (ankle) is out for Friday's game against the Heat."
  },
  {
-  "jugador": "TJ McConnell",
+  "jugador": "Mitchell Robinson",
   "donde": [
    "Mercado"
   ],
-  "error": "no encontrado en RotoWire"
+  "equipo": "BOS",
+  "url": "https://www.rotowire.com/basketball/player/mitchell-robinson-4426",
+  "estado": "Questionable",
+  "lesion": "Rest",
+  "vuelta": "Nov 1",
+  "titular": "Scores seven points",
+  "fecha": "October 28, 2026",
+  "noticia": "Robinson closed Tuesday's 125-124 overtime win over the Nets with seven points (3-4 FG, 1-4 FT), five rebounds and one steal over 25 minutes."
  },
  {
   "jugador": "Bradley Beal",
@@ -78,10 +78,10 @@
   "url": "https://www.rotowire.com/basketball/player/ty-jerome-4774",
   "estado": "Questionable",
   "lesion": "Back",
-  "vuelta": "Oct 31",
-  "titular": "Available Thursday",
-  "fecha": "October 29, 2026",
-  "noticia": "Jerome (back) is available for Thursday's game at Portland."
+  "vuelta": "Nov 2",
+  "titular": "Questionable versus Kings",
+  "fecha": "October 30, 2026",
+  "noticia": "Jerome (back) is listed as questionable for Saturday's game against the Kings."
  },
  {
   "jugador": "Reed Sheppard",
@@ -92,10 +92,10 @@
   "url": "https://www.rotowire.com/basketball/player/reed-sheppard-6257",
   "estado": "Questionable",
   "lesion": "Back",
-  "vuelta": "Oct 31",
-  "titular": "Ruled out for Friday",
-  "fecha": "October 29, 2026",
-  "noticia": "Sheppard (back) is out for Friday's game against the Mavericks."
+  "vuelta": "Nov 2",
+  "titular": "Fourth-year option exercised",
+  "fecha": "October 30, 2026",
+  "noticia": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com."
  },
  {
   "jugador": "Quinten Post",
@@ -104,12 +104,12 @@
   ],
   "equipo": "MEM",
   "url": "https://www.rotowire.com/basketball/player/quinten-post-6299",
-  "estado": "Doubtful",
+  "estado": "Questionable",
   "lesion": "Ankle",
-  "vuelta": "Oct 31",
-  "titular": "Unable to return Thursday",
-  "fecha": "October 29, 2026",
-  "noticia": "Post (ankle) didn't return to Thursday's game against Portland. He recorded 10 points (3-5 FG, 2-3 3Pt, 2-2 FT) and four rebounds in seven minutes before exiting."
+  "vuelta": "Nov 2",
+  "titular": "Doubtful for Saturday",
+  "fecha": "October 30, 2026",
+  "noticia": "Post (ankle) is doubtful for Saturday's game against the Kings."
  },
  {
   "jugador": "Dylan Cardwell",
@@ -132,12 +132,26 @@
   ],
   "equipo": "DEN",
   "url": "https://www.rotowire.com/basketball/player/spencer-jones-6315",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hamstring",
   "vuelta": "Nov 2",
   "titular": "Nearing return to action",
   "fecha": "October 26, 2026",
   "noticia": "Jones (hamstring) is progressing in his recovery and could be back with the team within the next three games, Vinny Benedetto of The Denver Gazette reports."
+ },
+ {
+  "jugador": "Dejounte Murray",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "NOP",
+  "url": "https://www.rotowire.com/basketball/player/dejounte-murray-3856",
+  "estado": "Questionable",
+  "lesion": "Personal",
+  "vuelta": "Nov 2",
+  "titular": "Absent from injury report",
+  "fecha": "October 30, 2026",
+  "noticia": "Murray (personal) is off the injury report for Saturday's game against the Hawks."
  },
  {
   "jugador": "Dominick Barlow",
@@ -160,7 +174,7 @@
   ],
   "equipo": "CLE",
   "url": "https://www.rotowire.com/basketball/player/jaylon-tyson-6277",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Ankle",
   "vuelta": "Nov 2",
   "titular": "Available vs. Hawks",
@@ -168,18 +182,11 @@
   "noticia": "Tyson (neck) has been cleared to play Thursday night against Atlanta."
  },
  {
-  "jugador": "Lauri Markkanen",
+  "jugador": "Mikel Brown Jr.",
   "donde": [
-   "Dolla"
+   "Celtics"
   ],
-  "equipo": "UTA",
-  "url": "https://www.rotowire.com/basketball/player/lauri-markkanen-4119",
-  "estado": "Questionable",
-  "lesion": "Wrist",
-  "vuelta": "Oct 31",
-  "titular": "Won't play Wednesday",
-  "fecha": "October 28, 2026",
-  "noticia": "Markkanen (wrist) is out for Wednesday's tilt against the Spurs."
+  "error": "no encontrado en RotoWire"
  },
  {
   "jugador": "Kylan Boswell",
@@ -202,7 +209,7 @@
   ],
   "equipo": "NOP",
   "url": "https://www.rotowire.com/basketball/player/jordan-poole-4791",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Ankle",
   "vuelta": "Nov 2",
   "titular": "Won't play Thursday",
@@ -224,18 +231,18 @@
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
  },
  {
-  "jugador": "Yanic Konan Niederhauser",
+  "jugador": "LeBron James",
   "donde": [
    "PENISLOVER"
   ],
-  "equipo": "LAC",
-  "url": "https://www.rotowire.com/basketball/player/yanic-konan-niederhauser-6616",
-  "estado": "Out",
-  "lesion": "Foot",
-  "vuelta": "Nov 8",
-  "titular": "'Making progress' toward return",
-  "fecha": "October 28, 2026",
-  "noticia": "Niederhauser (foot) remains out for Wednesday's game against the Lakers. He also won't travel with the team for the upcoming two-game road trip in Minnesota and Golden State, Ohm Youngmisuk of ESPN.com reports."
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/lebron-james-2344",
+  "estado": "Questionable",
+  "lesion": "Back",
+  "vuelta": "Nov 2",
+  "titular": "Teases triple-double vs. New York",
+  "fecha": "October 31, 2026",
+  "noticia": "James (rest) closed with 20 points (8-15 FG, 2-6 3Pt, 2-3 FT), nine rebounds, eight assists, one block and one steal across 34 minutes during Friday's 98-93 win over the Knicks."
  },
  {
   "jugador": "Kon Knueppel",
@@ -244,7 +251,7 @@
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Hamstring",
   "vuelta": "Nov 2",
   "titular": "Practicing in G League",
