@@ -1,17 +1,17 @@
 [
  {
-  "jugador": "Kawhi Leonard",
+  "jugador": "Kelly Oubre",
   "donde": [
    "Mercado"
   ],
-  "equipo": "TOR",
-  "url": "https://www.rotowire.com/basketball/player/kawhi-leonard-3195",
+  "equipo": "IND",
+  "url": "https://www.rotowire.com/basketball/player/kelly-oubre-3721",
   "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Nov 23",
-  "titular": "To miss 3-4 weeks",
-  "fecha": "October 29, 2026",
-  "noticia": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports."
+  "lesion": "Calf",
+  "vuelta": "Nov 7",
+  "titular": "Iffy for Wednesday",
+  "fecha": "November 3, 2026",
+  "noticia": "Oubre (knee) is questionable for Wednesday's game against the Grizzlies."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -35,32 +35,25 @@
   "noticia": "Holmgren (knee) remains out for Saturday's road game against Houston, Justin Martinez of The Oklahoman reports."
  },
  {
-  "jugador": "Julian Strawther",
+  "jugador": "Dereck Lively II",
   "donde": [
    "Mercado"
   ],
-  "equipo": "DEN",
-  "url": "https://www.rotowire.com/basketball/player/julian-strawther-5915",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Nov 29",
-  "titular": "Set for imaging on knee",
-  "fecha": "October 14, 2026",
-  "noticia": "Strawther (knee) will undergo an MRI on Thursday morning, Katy Winge of Altitude Sports reports."
+  "error": "no encontrado en RotoWire"
  },
  {
-  "jugador": "Alpha Diallo",
+  "jugador": "Jarrett Allen",
   "donde": [
-   "Mercado"
+   "Celtics"
   ],
-  "equipo": "DEN",
-  "url": "https://www.rotowire.com/basketball/player/alpha-diallo-5270",
-  "estado": "Probable",
-  "lesion": "Wrist",
-  "vuelta": "Nov 4",
-  "titular": "Returns to action",
-  "fecha": "November 3, 2026",
-  "noticia": "Diallo posted zero points (0-1 FG) and one rebound in six minutes during Monday's 118-110 loss to the Trail Blazers."
+  "equipo": "CLE",
+  "url": "https://www.rotowire.com/basketball/player/jarrett-allen-4122",
+  "estado": "Questionable",
+  "lesion": "Knee",
+  "vuelta": "Nov 6",
+  "titular": "Doubtful to return Wednesday",
+  "fecha": "November 4, 2026",
+  "noticia": "Allen (knee) is doubtful to return to Wednesday's game against the Thunder, Brett Siegel of ClutchPoints.com reports."
  },
  {
   "jugador": "Dominick Barlow",
@@ -71,10 +64,10 @@
   "url": "https://www.rotowire.com/basketball/player/dominick-barlow-5670",
   "estado": "Out",
   "lesion": "Back",
-  "vuelta": "Nov 12",
-  "titular": "To be re-evaluated Tuesday",
-  "fecha": "November 2, 2026",
-  "noticia": "Barlow (back) has been on the court \"a little bit\" and will be re-evaluated Tuesday, Austin Krell of OnPattison.com reports."
+  "vuelta": "Nov 18",
+  "titular": "Still sidelined",
+  "fecha": "November 3, 2026",
+  "noticia": "Barlow (back) won't play in Wednesday's game against the Pistons, Austin Krell of OnPattison.com reports."
  },
  {
   "jugador": "Jaylon Tyson",
@@ -86,51 +79,23 @@
   "estado": "Out",
   "lesion": "Ankle",
   "vuelta": "Nov 6",
-  "titular": "Out again for Monday",
-  "fecha": "November 1, 2026",
-  "noticia": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
- },
- {
-  "jugador": "Jordan Poole",
-  "donde": [
-   "Rueda"
-  ],
-  "equipo": "NOP",
-  "url": "https://www.rotowire.com/basketball/player/jordan-poole-4791",
-  "estado": "Probable",
-  "lesion": "Ankle",
-  "vuelta": "Nov 4",
-  "titular": "Out again Monday",
-  "fecha": "November 1, 2026",
-  "noticia": "Poole (ankle) has been ruled out for Monday's game against the Grizzlies."
- },
- {
-  "jugador": "Precious Achiuwa",
-  "donde": [
-   "latengocomowemby"
-  ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/precious-achiuwa-5249",
-  "estado": "Probable",
-  "lesion": "Ankle",
-  "vuelta": "Nov 4",
-  "titular": "Strong effort on glass",
+  "titular": "Out with ankle sprain",
   "fecha": "November 3, 2026",
-  "noticia": "Achiuwa notched six points (2-3 FG, 2-3 FT), 10 rebounds, three assists, two blocks and two steals across 27 minutes during Monday's 115-100 victory over the Mavericks."
+  "noticia": "Tyson is out for Wednesday's game against the Thunder due to a right ankle sprain."
  },
  {
-  "jugador": "Payton Pritchard",
+  "jugador": "Isaiah Stewart",
   "donde": [
-   "latengocomowemby"
+   "Shaquille O'Meal"
   ],
-  "equipo": "BOS",
-  "url": "https://www.rotowire.com/basketball/player/payton-pritchard-5131",
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
   "estado": "Questionable",
-  "lesion": "Shoulder",
-  "vuelta": "Nov 4",
-  "titular": "Has tough shooting night",
-  "fecha": "November 3, 2026",
-  "noticia": "Pritchard finished Monday's 109-93 loss to the Rockets with four points (0-7 FG, 0-5 3Pt, 4-6 FT), three rebounds, three assists and one steal across 30 minutes."
+  "lesion": "Knee",
+  "vuelta": "Nov 6",
+  "titular": "Doubtful to return",
+  "fecha": "November 4, 2026",
+  "noticia": "Stewart is doubtful to return to Wednesday's game against the Pacers due to a right knee injury."
  },
  {
   "jugador": "Spencer Jones",
@@ -167,12 +132,12 @@
   ],
   "equipo": "PHX",
   "url": "https://www.rotowire.com/basketball/player/jordan-goodwin-5460",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Calf",
-  "vuelta": "Nov 4",
-  "titular": "Departs with calf issue",
-  "fecha": "November 2, 2026",
-  "noticia": "Goodwin won't return to Monday's game against the Warriors due to a left calf injury, Duane Rankin of The Arizona Republic reports. He recorded four points (2-3 FG, 0-1 3Pt), two rebounds, two assists and one steal in 10 minutes before exiting."
+  "vuelta": "Nov 5",
+  "titular": "Questionable for Wednesday",
+  "fecha": "November 3, 2026",
+  "noticia": "Goodwin (calf) is questionable for Wednesday's game against Portland, Duane Rankin of The Arizona Republic reports."
  },
  {
   "jugador": "Bradley Beal",
@@ -189,6 +154,18 @@
   "noticia": "Beal (knee) isn't participating in five-on-five work but is doing individual player development work, Tomer Azarly of ClutchPoints.com reports. Azarly adds that the Clippers said Wednesday that Beal is continuing to have inflammation managed."
  },
  {
+  "jugador": "Day'Ron Sharpe",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "BKN",
+  "url": "https://www.rotowire.com/basketball/player/dayron-sharpe-5418",
+  "estado": "No aparece en el parte",
+  "titular": "Limited role in loss",
+  "fecha": "October 28, 2026",
+  "noticia": "Sharpe finished Tuesday's 125-124 overtime loss to the Celtics with four points (2-4 FG, 0-1 3Pt), six rebounds, one block and one steal in 17 minutes."
+ },
+ {
   "jugador": "Ja Morant",
   "donde": [
    "Impredictables"
@@ -201,20 +178,6 @@
   "titular": "Departs with hamstring issue",
   "fecha": "October 29, 2026",
   "noticia": "Morant won't return to Thursday's game against the Grizzlies due to a left hamstring injury. He'll end with 14 points (6-14 FG, 2-5 3Pt), two rebounds and three assists in 23 minutes."
- },
- {
-  "jugador": "Quinten Post",
-  "donde": [
-   "Impredictables"
-  ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/quinten-post-6299",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Nov 4",
-  "titular": "Unavailable Monday",
-  "fecha": "November 2, 2026",
-  "noticia": "Post (ankle) has been downgraded to out for Monday's game against the Pelicans."
  },
  {
   "jugador": "Reece Beekman",
@@ -231,17 +194,17 @@
   "noticia": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports."
  },
  {
-  "jugador": "Kon Knueppel",
+  "jugador": "Zach Collins",
   "donde": [
    "Vamosnomejodas"
   ],
-  "equipo": "CHA",
-  "url": "https://www.rotowire.com/basketball/player/kon-knueppel-6540",
-  "estado": "Probable",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 4",
-  "titular": "Out against Detroit",
-  "fecha": "November 1, 2026",
-  "noticia": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
+  "equipo": "CHI",
+  "url": "https://www.rotowire.com/basketball/player/zach-collins-4162",
+  "estado": "Questionable",
+  "lesion": "Undisclosed",
+  "vuelta": "Nov 8",
+  "titular": "Heads to locker room",
+  "fecha": "November 4, 2026",
+  "noticia": "Collins (undisclosed) exited to the locker room in the fourth quarter of Wednesday's game against the Knicks, K.C. Johnson of Chicago Sports Network reports."
  }
 ]
