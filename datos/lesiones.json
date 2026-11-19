@@ -1,17 +1,17 @@
 [
  {
-  "jugador": "Kelly Oubre",
+  "jugador": "Jusuf Nurkic",
   "donde": [
    "Mercado"
   ],
-  "equipo": "IND",
-  "url": "https://www.rotowire.com/basketball/player/kelly-oubre-3721",
-  "estado": "Questionable",
-  "lesion": "Calf",
-  "vuelta": "Nov 7",
-  "titular": "Iffy for Wednesday",
+  "equipo": "UTA",
+  "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
+  "estado": "Doubtful",
+  "lesion": "Foot",
+  "vuelta": "Nov 20",
+  "titular": "Still waiting for season debut",
   "fecha": "November 3, 2026",
-  "noticia": "Oubre (knee) is questionable for Wednesday's game against the Grizzlies."
+  "noticia": "Nurkic (foot) is out for Wednesday's game against the Pelicans."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -21,39 +21,32 @@
   "error": "no encontrado en RotoWire"
  },
  {
-  "jugador": "Chet Holmgren",
+  "jugador": "Gregory Jackson II",
   "donde": [
    "Mercado"
   ],
-  "equipo": "OKC",
-  "url": "https://www.rotowire.com/basketball/player/chet-holmgren-5697",
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/gg-jackson-5946",
   "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Jan 2, 2027",
-  "titular": "Remains out for Saturday",
-  "fecha": "October 30, 2026",
-  "noticia": "Holmgren (knee) remains out for Saturday's road game against Houston, Justin Martinez of The Oklahoman reports."
+  "lesion": "Foot",
+  "vuelta": "Jan 18, 2027",
+  "titular": "Undergoing foot surgery",
+  "fecha": "November 16, 2026",
+  "noticia": "Jackson will undergo surgery to repair the broken fifth metatarsal in his left foot and is set to miss significant time."
  },
  {
-  "jugador": "Dereck Lively II",
+  "jugador": "Tyrese Maxey",
   "donde": [
-   "Mercado"
+   "Antony Jordan"
   ],
-  "error": "no encontrado en RotoWire"
- },
- {
-  "jugador": "Jarrett Allen",
-  "donde": [
-   "Celtics"
-  ],
-  "equipo": "CLE",
-  "url": "https://www.rotowire.com/basketball/player/jarrett-allen-4122",
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/tyrese-maxey-5158",
   "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Nov 6",
-  "titular": "Doubtful to return Wednesday",
-  "fecha": "November 4, 2026",
-  "noticia": "Allen (knee) is doubtful to return to Wednesday's game against the Thunder, Brett Siegel of ClutchPoints.com reports."
+  "lesion": "Foot",
+  "vuelta": "Nov 21",
+  "titular": "Questionable for Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Maxey is questionable for Wednesday's game in Orlando due to right foot soreness, Gina Mizell of The Philadelphia Inquirer reports."
  },
  {
   "jugador": "Dominick Barlow",
@@ -62,12 +55,12 @@
   ],
   "equipo": "PHI",
   "url": "https://www.rotowire.com/basketball/player/dominick-barlow-5670",
-  "estado": "Out",
+  "estado": "Doubtful",
   "lesion": "Back",
-  "vuelta": "Nov 18",
-  "titular": "Still sidelined",
-  "fecha": "November 3, 2026",
-  "noticia": "Barlow (back) won't play in Wednesday's game against the Pistons, Austin Krell of OnPattison.com reports."
+  "vuelta": "Nov 21",
+  "titular": "Nearing season debut",
+  "fecha": "November 16, 2026",
+  "noticia": "Barlow (back) will be re-evaluated later in the week and is thought to be nearing his 2026-27 season debut, Tony Jones of The Athletic reports."
  },
  {
   "jugador": "Jaylon Tyson",
@@ -78,10 +71,10 @@
   "url": "https://www.rotowire.com/basketball/player/jaylon-tyson-6277",
   "estado": "Questionable",
   "lesion": "Ankle",
-  "vuelta": "Nov 6",
-  "titular": "Out with ankle sprain",
-  "fecha": "November 3, 2026",
-  "noticia": "Tyson is out for Wednesday's game against the Thunder due to a right ankle sprain."
+  "vuelta": "Nov 20",
+  "titular": "Doubtful for Wednesday",
+  "fecha": "November 17, 2026",
+  "noticia": "Tyson (ankle) is listed as doubtful for Wednesday's game against the Grizzlies."
  },
  {
   "jugador": "Isaiah Stewart",
@@ -91,53 +84,11 @@
   "equipo": "MEM",
   "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
   "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Nov 6",
-  "titular": "Doubtful to return",
-  "fecha": "November 4, 2026",
-  "noticia": "Stewart is doubtful to return to Wednesday's game against the Pacers due to a right knee injury."
- },
- {
-  "jugador": "Spencer Jones",
-  "donde": [
-   "latengocomowemby"
-  ],
-  "equipo": "DEN",
-  "url": "https://www.rotowire.com/basketball/player/spencer-jones-6315",
-  "estado": "Out",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 11",
-  "titular": "Still out for Monday",
-  "fecha": "November 1, 2026",
-  "noticia": "Jones (hamstring) is listed as out for Monday's game against the Trail Blazers."
- },
- {
-  "jugador": "Jimmy Butler",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "GSW",
-  "url": "https://www.rotowire.com/basketball/player/jimmy-butler-3231",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Jan 2, 2027",
-  "titular": "Still months away from returning",
-  "fecha": "October 2, 2026",
-  "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
- },
- {
-  "jugador": "Jordan Goodwin",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "PHX",
-  "url": "https://www.rotowire.com/basketball/player/jordan-goodwin-5460",
-  "estado": "Questionable",
-  "lesion": "Calf",
-  "vuelta": "Nov 5",
-  "titular": "Questionable for Wednesday",
-  "fecha": "November 3, 2026",
-  "noticia": "Goodwin (calf) is questionable for Wednesday's game against Portland, Duane Rankin of The Arizona Republic reports."
+  "lesion": "Illness",
+  "vuelta": "Nov 19",
+  "titular": "Out sick Monday",
+  "fecha": "November 16, 2026",
+  "noticia": "Stewart is out for Monday's game against the Wizards due to an illness."
  },
  {
   "jugador": "Bradley Beal",
@@ -154,16 +105,32 @@
   "noticia": "Beal (knee) isn't participating in five-on-five work but is doing individual player development work, Tomer Azarly of ClutchPoints.com reports. Azarly adds that the Clippers said Wednesday that Beal is continuing to have inflammation managed."
  },
  {
-  "jugador": "Day'Ron Sharpe",
+  "jugador": "CJ McCollum",
   "donde": [
    "Impredictables"
   ],
-  "equipo": "BKN",
-  "url": "https://www.rotowire.com/basketball/player/dayron-sharpe-5418",
-  "estado": "No aparece en el parte",
-  "titular": "Limited role in loss",
-  "fecha": "October 28, 2026",
-  "noticia": "Sharpe finished Tuesday's 125-124 overtime loss to the Celtics with four points (2-4 FG, 0-1 3Pt), six rebounds, one block and one steal in 17 minutes."
+  "equipo": "ATL",
+  "url": "https://www.rotowire.com/basketball/player/cj-mccollum-3437",
+  "estado": "Out",
+  "lesion": "Calf",
+  "vuelta": "Dec 19",
+  "titular": "Hits for 20 in return to starting five",
+  "fecha": "November 16, 2026",
+  "noticia": "McCollum closed Sunday's 113-106 victory over the Bucks with 20 points (5-10 FG, 1-3 3Pt, 9-9 FT), four rebounds, two assists and four steals across 30 minutes."
+ },
+ {
+  "jugador": "Alex Caruso",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "OKC",
+  "url": "https://www.rotowire.com/basketball/player/alex-caruso-3952",
+  "estado": "Questionable",
+  "lesion": "Hip",
+  "vuelta": "Nov 20",
+  "titular": "Strong defensive showing in win",
+  "fecha": "November 16, 2026",
+  "noticia": "Caruso totaled 11 points (3-6 FG, 1-3 3Pt, 4-4 FT), two rebounds, three assists, one block and four steals across 18 minutes off the bench during Sunday's 125-103 win over the Kings."
  },
  {
   "jugador": "Ja Morant",
@@ -175,9 +142,128 @@
   "estado": "Out",
   "lesion": "Hamstring",
   "vuelta": "Dec 1",
-  "titular": "Departs with hamstring issue",
-  "fecha": "October 29, 2026",
-  "noticia": "Morant won't return to Thursday's game against the Grizzlies due to a left hamstring injury. He'll end with 14 points (6-14 FG, 2-5 3Pt), two rebounds and three assists in 23 minutes."
+  "titular": "Out four weeks with hamstring strain",
+  "fecha": "October 30, 2026",
+  "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
+ },
+ {
+  "jugador": "Ty Jerome",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/ty-jerome-4774",
+  "estado": "Questionable",
+  "lesion": "Hip",
+  "vuelta": "Nov 19",
+  "titular": "Listed out for Monday",
+  "fecha": "November 15, 2026",
+  "noticia": "Jerome (hip) has been ruled out for Monday's game against the Wizards."
+ },
+ {
+  "jugador": "Jaylen Brown",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/jaylen-brown-3894",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 23",
+  "titular": "Out with hamstring strain",
+  "fecha": "November 17, 2026",
+  "noticia": "Brown is out for Wednesday's game against the Magic with a left hamstring strain."
+ },
+ {
+  "jugador": "Brandon Ingram",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "LAC",
+  "url": "https://www.rotowire.com/basketball/player/brandon-ingram-3861",
+  "estado": "Out",
+  "lesion": "Achilles",
+  "vuelta": "Nov 21",
+  "titular": "Not ready for season debut",
+  "fecha": "November 12, 2026",
+  "noticia": "Ingram (Achilles) won't play in Friday's game against the Thunder, per Law Murray of The Athletic."
+ },
+ {
+  "jugador": "Myron Gardner",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "MIA",
+  "url": "https://www.rotowire.com/basketball/player/myron-gardner-6067",
+  "estado": "Questionable",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 22",
+  "titular": "Iffy for Wednesday",
+  "fecha": "November 17, 2026",
+  "noticia": "Gardner (hamstring) is questionable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel."
+ },
+ {
+  "jugador": "RJ Barrett",
+  "donde": [
+   "Vamosnomejodas"
+  ],
+  "equipo": "TOR",
+  "url": "https://www.rotowire.com/basketball/player/rj-barrett-4767",
+  "estado": "Questionable",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 20",
+  "titular": "Questionable to face Washington",
+  "fecha": "November 18, 2026",
+  "noticia": "Barrett is questionable for Wednesday's game against the Wizards due to hamstring tightness, Esfandiar Baraheni of The Athletic reports."
+ },
+ {
+  "jugador": "Dylan Harper",
+  "donde": [
+   "Vamosnomejodas"
+  ],
+  "equipo": "SAS",
+  "url": "https://www.rotowire.com/basketball/player/dylan-harper-6549",
+  "estado": "Out",
+  "lesion": "Hip",
+  "vuelta": "Nov 21",
+  "titular": "Leaves early after awkward fall Tuesday",
+  "fecha": "November 17, 2026",
+  "noticia": "Harper left Tuesday's game against the Pistons due to an undisclosed injury after an awkward fall, Chris Mannix reports."
+ },
+ {
+  "jugador": "Jimmy Butler",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "GSW",
+  "url": "https://www.rotowire.com/basketball/player/jimmy-butler-3231",
+  "estado": "Out",
+  "lesion": "Knee",
+  "vuelta": "Jan 2, 2027",
+  "titular": "Still months away from returning",
+  "fecha": "October 2, 2026",
+  "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
+ },
+ {
+  "jugador": "Jaylen Clark",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "MIN",
+  "url": "https://www.rotowire.com/basketball/player/jaylen-clark-5972",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 29",
+  "titular": "Won't return Saturday",
+  "fecha": "November 14, 2026",
+  "noticia": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
+ },
+ {
+  "jugador": "Ron Holland II",
+  "donde": [
+   "Dolla"
+  ],
+  "error": "no encontrado en RotoWire"
  },
  {
   "jugador": "Reece Beekman",
@@ -194,17 +280,31 @@
   "noticia": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports."
  },
  {
-  "jugador": "Zach Collins",
+  "jugador": "Thomas Sorber",
   "donde": [
-   "Vamosnomejodas"
+   "Dolla"
   ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/zach-collins-4162",
+  "equipo": "OKC",
+  "url": "https://www.rotowire.com/basketball/player/thomas-sorber-6544",
+  "estado": "Out",
+  "lesion": "Knee",
+  "vuelta": "Jan 31, 2027",
+  "titular": "Remains without timetable",
+  "fecha": "November 12, 2026",
+  "noticia": "Sorber (knee) has been ruled out for Friday's game against the Clippers."
+ },
+ {
+  "jugador": "Tobi Lawal",
+  "donde": [
+   "Dolla"
+  ],
+  "equipo": "DAL",
+  "url": "https://www.rotowire.com/basketball/player/tobi-lawal-6981",
   "estado": "Questionable",
-  "lesion": "Undisclosed",
-  "vuelta": "Nov 8",
-  "titular": "Heads to locker room",
-  "fecha": "November 4, 2026",
-  "noticia": "Collins (undisclosed) exited to the locker room in the fourth quarter of Wednesday's game against the Knicks, K.C. Johnson of Chicago Sports Network reports."
+  "lesion": "Groin",
+  "vuelta": "Nov 21",
+  "titular": "Doubtful for Wednesday",
+  "fecha": "November 17, 2026",
+  "noticia": "Lawal is doubtful for Wednesday's game against the Warriors due to tightness in his right groin."
  }
 ]
