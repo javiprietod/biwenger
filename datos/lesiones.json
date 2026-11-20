@@ -6,12 +6,12 @@
   ],
   "equipo": "UTA",
   "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
-  "estado": "Doubtful",
+  "estado": "Out",
   "lesion": "Foot",
-  "vuelta": "Nov 20",
-  "titular": "Still waiting for season debut",
-  "fecha": "November 3, 2026",
-  "noticia": "Nurkic (foot) is out for Wednesday's game against the Pelicans."
+  "vuelta": "Nov 27",
+  "titular": "Re-evaluated in two weeks",
+  "fecha": "November 6, 2026",
+  "noticia": "Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -21,18 +21,18 @@
   "error": "no encontrado en RotoWire"
  },
  {
-  "jugador": "Gregory Jackson II",
+  "jugador": "Zach Edey",
   "donde": [
    "Mercado"
   ],
   "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/gg-jackson-5946",
-  "estado": "Out",
-  "lesion": "Foot",
-  "vuelta": "Jan 18, 2027",
-  "titular": "Undergoing foot surgery",
-  "fecha": "November 16, 2026",
-  "noticia": "Jackson will undergo surgery to repair the broken fifth metatarsal in his left foot and is set to miss significant time."
+  "url": "https://www.rotowire.com/basketball/player/zach-edey-6263",
+  "estado": "Questionable",
+  "lesion": "Ankle",
+  "vuelta": "Nov 21",
+  "titular": "Foul trouble limits rebounding impact",
+  "fecha": "November 19, 2026",
+  "noticia": "Edey finished with 11 points (5-7 FG, 1-1 FT), two rebounds, one assist and two steals in 21 minutes before fouling out of Wednesday's 124-121 victory over the Cavaliers."
  },
  {
   "jugador": "Tyrese Maxey",
@@ -69,26 +69,26 @@
   ],
   "equipo": "CLE",
   "url": "https://www.rotowire.com/basketball/player/jaylon-tyson-6277",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Ankle",
-  "vuelta": "Nov 20",
-  "titular": "Doubtful for Wednesday",
-  "fecha": "November 17, 2026",
-  "noticia": "Tyson (ankle) is listed as doubtful for Wednesday's game against the Grizzlies."
+  "vuelta": "Nov 23",
+  "titular": "Out Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Tyson (ankle) has been ruled out for Wednesday's game against Memphis."
  },
  {
-  "jugador": "Isaiah Stewart",
+  "jugador": "Precious Achiuwa",
   "donde": [
    "Shaquille O'Meal"
   ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
-  "estado": "Questionable",
-  "lesion": "Illness",
-  "vuelta": "Nov 19",
-  "titular": "Out sick Monday",
-  "fecha": "November 16, 2026",
-  "noticia": "Stewart is out for Monday's game against the Wizards due to an illness."
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/precious-achiuwa-5249",
+  "estado": "Doubtful",
+  "lesion": "Lower Leg",
+  "vuelta": "Nov 20",
+  "titular": "Available Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Achiuwa (lower leg) is available for Wednesday's game against the Suns."
  },
  {
   "jugador": "Bradley Beal",
@@ -128,9 +128,9 @@
   "estado": "Questionable",
   "lesion": "Hip",
   "vuelta": "Nov 20",
-  "titular": "Strong defensive showing in win",
-  "fecha": "November 16, 2026",
-  "noticia": "Caruso totaled 11 points (3-6 FG, 1-3 3Pt, 4-4 FT), two rebounds, three assists, one block and four steals across 18 minutes off the bench during Sunday's 125-103 win over the Kings."
+  "titular": "Won't return Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Caruso won't return to Wednesday's game against the Hawks due to right hip soreness, Clemente Almanza of USA Today reports."
  },
  {
   "jugador": "Ja Morant",
@@ -147,6 +147,20 @@
   "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
  },
  {
+  "jugador": "De'Andre Hunter",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/deandre-hunter-4776",
+  "estado": "Questionable",
+  "lesion": "Hip",
+  "vuelta": "Nov 20",
+  "titular": "Available Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Hunter (hip) is available for Wednesday's game against the Suns."
+ },
+ {
   "jugador": "Ty Jerome",
   "donde": [
    "Impredictables"
@@ -155,10 +169,10 @@
   "url": "https://www.rotowire.com/basketball/player/ty-jerome-4774",
   "estado": "Questionable",
   "lesion": "Hip",
-  "vuelta": "Nov 19",
-  "titular": "Listed out for Monday",
-  "fecha": "November 15, 2026",
-  "noticia": "Jerome (hip) has been ruled out for Monday's game against the Wizards."
+  "vuelta": "Nov 21",
+  "titular": "Won't play Wednesday",
+  "fecha": "November 17, 2026",
+  "noticia": "Jerome (hip) has been ruled out for Wednesday's game in Cleveland."
  },
  {
   "jugador": "Jaylen Brown",
@@ -181,7 +195,7 @@
   ],
   "equipo": "LAC",
   "url": "https://www.rotowire.com/basketball/player/brandon-ingram-3861",
-  "estado": "Out",
+  "estado": "Doubtful",
   "lesion": "Achilles",
   "vuelta": "Nov 21",
   "titular": "Not ready for season debut",
@@ -209,26 +223,12 @@
   ],
   "equipo": "TOR",
   "url": "https://www.rotowire.com/basketball/player/rj-barrett-4767",
-  "estado": "Questionable",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 20",
-  "titular": "Questionable to face Washington",
-  "fecha": "November 18, 2026",
-  "noticia": "Barrett is questionable for Wednesday's game against the Wizards due to hamstring tightness, Esfandiar Baraheni of The Athletic reports."
- },
- {
-  "jugador": "Dylan Harper",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "SAS",
-  "url": "https://www.rotowire.com/basketball/player/dylan-harper-6549",
   "estado": "Out",
-  "lesion": "Hip",
-  "vuelta": "Nov 21",
-  "titular": "Leaves early after awkward fall Tuesday",
-  "fecha": "November 17, 2026",
-  "noticia": "Harper left Tuesday's game against the Pistons due to an undisclosed injury after an awkward fall, Chris Mannix reports."
+  "lesion": "Hamstring",
+  "vuelta": "Dec 13",
+  "titular": "Won't play Wednesday",
+  "fecha": "November 18, 2026",
+  "noticia": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
  },
  {
   "jugador": "Jimmy Butler",
