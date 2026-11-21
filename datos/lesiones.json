@@ -1,5 +1,19 @@
 [
  {
+  "jugador": "Precious Achiuwa",
+  "donde": [
+   "Mi equipo"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/precious-achiuwa-5249",
+  "estado": "Out",
+  "lesion": "Lower Leg",
+  "vuelta": "Nov 21",
+  "titular": "Deemed doubtful for Friday",
+  "fecha": "November 19, 2026",
+  "noticia": "Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise."
+ },
+ {
   "jugador": "Jordan Clarkson",
   "donde": [
    "Mercado"
@@ -82,20 +96,6 @@
   "titular": "Out Wednesday",
   "fecha": "November 18, 2026",
   "noticia": "Tyson (ankle) has been ruled out for Wednesday's game against Memphis."
- },
- {
-  "jugador": "Precious Achiuwa",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/precious-achiuwa-5249",
-  "estado": "Out",
-  "lesion": "Lower Leg",
-  "vuelta": "Nov 21",
-  "titular": "Deemed doubtful for Friday",
-  "fecha": "November 19, 2026",
-  "noticia": "Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise."
  },
  {
   "jugador": "Jalen Smith",
