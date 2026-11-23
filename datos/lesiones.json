@@ -1,45 +1,31 @@
 [
  {
-  "jugador": "Norman Powell",
+  "jugador": "Trey Murphy",
   "donde": [
    "Mercado"
   ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/norman-powell-3726",
-  "estado": "Questionable",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 22",
-  "titular": "Scores team-high 16 points in loss",
-  "fecha": "November 20, 2026",
-  "noticia": "Powell tallied 16 points (7-18 FG, 1-5 3Pt, 1-2 FT), three rebounds, two assists and one steal in 33 minutes during Friday's 98-84 loss to Washington."
+  "equipo": "NOP",
+  "url": "https://www.rotowire.com/basketball/player/trey-murphy-5401",
+  "estado": "Probable",
+  "lesion": "Knee",
+  "vuelta": "Nov 23",
+  "titular": "Won't play Saturday",
+  "fecha": "November 21, 2026",
+  "noticia": "Murphy (knee) has been ruled out for Saturday's game against the Spurs."
  },
  {
-  "jugador": "Jayson Tatum",
+  "jugador": "Jonathan Isaac",
   "donde": [
    "Mercado"
   ],
-  "equipo": "BOS",
-  "url": "https://www.rotowire.com/basketball/player/jayson-tatum-4108",
-  "estado": "Out",
-  "lesion": "Rest",
-  "vuelta": "Nov 22",
-  "titular": "Might rest Saturday",
-  "fecha": "November 20, 2026",
-  "noticia": "Tatum (rest) is listed as questionable for Saturday's game against Sacramento."
- },
- {
-  "jugador": "Ben Sheppard",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "IND",
-  "url": "https://www.rotowire.com/basketball/player/ben-sheppard-6033",
+  "equipo": "ORL",
+  "url": "https://www.rotowire.com/basketball/player/jonathan-isaac-4103",
   "estado": "Out",
   "lesion": "Knee",
-  "vuelta": "Jan 2, 2027",
-  "titular": "Will undergo surgery",
-  "fecha": "October 26, 2026",
-  "noticia": "Sheppard is scheduled for surgery to repair a torn meniscus in his left knee Wednesday, Dustin Dopirak of The Indianapolis Star reports."
+  "vuelta": "Nov 29",
+  "titular": "Remains out Monday",
+  "fecha": "November 15, 2026",
+  "noticia": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
  },
  {
   "jugador": "Ariel Hukporti",
@@ -56,18 +42,32 @@
   "noticia": "Hukporti didn't return to Monday's preseason game against the Knicks due to an Achilles injury and will undergo an MRI on Tuesday, Adam Aaronson of PhillyVoice.com reports. He didn't score (0-1 FG, 0-1 3Pt) and recorded one assist in five minutes before exiting."
  },
  {
-  "jugador": "Cameron Boozer",
+  "jugador": "Norman Powell",
   "donde": [
-   "Mercado"
+   "Rueda"
   ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/cameron-boozer-6923",
+  "equipo": "CHI",
+  "url": "https://www.rotowire.com/basketball/player/norman-powell-3726",
   "estado": "Out",
-  "lesion": "Ankle",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 28",
+  "titular": "Questionable to play Sunday",
+  "fecha": "November 21, 2026",
+  "noticia": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain."
+ },
+ {
+  "jugador": "Aday Mara",
+  "donde": [
+   "Rueda"
+  ],
+  "equipo": "OKC",
+  "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
+  "estado": "Questionable",
+  "lesion": "Lower Leg",
   "vuelta": "Nov 23",
-  "titular": "Flawless shooting powers easy win",
+  "titular": "Records 22/16 double-double",
   "fecha": "November 20, 2026",
-  "noticia": "Boozer amassed 16 points (6-6 FG, 4-4 FT), six rebounds, five assists and one block across 27 minutes during Thursday's 126-98 victory over the Warriors."
+  "noticia": "Mara posted 22 points (11-15 FG), 16 rebounds, two assists and two blocks across 29 minutes during Friday's 126-120 win over the Pelicans."
  },
  {
   "jugador": "Zion Williamson",
@@ -76,12 +76,12 @@
   ],
   "equipo": "NOP",
   "url": "https://www.rotowire.com/basketball/player/zion-williamson-4777",
-  "estado": "Out",
+  "estado": "Probable",
   "lesion": "Thigh",
   "vuelta": "Nov 23",
-  "titular": "Strong all-around effort Friday",
-  "fecha": "November 20, 2026",
-  "noticia": "Williamson ended with 22 points (9-19 FG, 4-6 FT), six rebounds, seven assists and two steals over 37 minutes in Friday's 126-120 loss to Oklahoma City."
+  "titular": "Not playing Saturday",
+  "fecha": "November 21, 2026",
+  "noticia": "Williamson is out for Saturday's game against the Spurs due to a left thigh contusion."
  },
  {
   "jugador": "Jaylon Tyson",
@@ -90,40 +90,12 @@
   ],
   "equipo": "CLE",
   "url": "https://www.rotowire.com/basketball/player/jaylon-tyson-6277",
-  "estado": "Questionable",
+  "estado": "Probable",
   "lesion": "Ankle",
   "vuelta": "Nov 23",
-  "titular": "Out Wednesday",
-  "fecha": "November 18, 2026",
-  "noticia": "Tyson (ankle) has been ruled out for Wednesday's game against Memphis."
- },
- {
-  "jugador": "Shai Gilgeous-Alexander",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "OKC",
-  "url": "https://www.rotowire.com/basketball/player/shai-gilgeous-alexander-4387",
-  "estado": "Questionable",
-  "lesion": "Back",
-  "vuelta": "Nov 22",
-  "titular": "Drops 40-piece in win",
-  "fecha": "November 20, 2026",
-  "noticia": "Gilgeous-Alexander recorded 40 points (14-24 FG, 4-7 3Pt, 8-11 FT), three rebounds, seven assists and one block in 37 minutes during Friday's 126-120 win over the Pelicans."
- },
- {
-  "jugador": "Jalen Smith",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "CHI",
-  "url": "https://www.rotowire.com/basketball/player/jalen-smith-5169",
-  "estado": "Questionable",
-  "lesion": "Illness",
-  "vuelta": "Nov 22",
-  "titular": "Now questionable Friday",
-  "fecha": "November 20, 2026",
-  "noticia": "Smith (illness) has been downgraded to questionable for Friday's game against the Wizards."
+  "titular": "Out for Friday",
+  "fecha": "November 19, 2026",
+  "noticia": "Tyson (ankle) has been ruled out for Friday's game against Indiana."
  },
  {
   "jugador": "P.J. Washington",
@@ -134,10 +106,87 @@
   "url": "https://www.rotowire.com/basketball/player/pj-washington-4781",
   "estado": "Questionable",
   "lesion": "Illness",
-  "vuelta": "Nov 22",
-  "titular": "Unlikely to play Saturday",
+  "vuelta": "Nov 24",
+  "titular": "Doubtful to play Sunday",
+  "fecha": "November 22, 2026",
+  "noticia": "Washington (illness) is doubtful to play Sunday's game against the Jazz."
+ },
+ {
+  "jugador": "Jusuf Nurkic",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "UTA",
+  "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
+  "estado": "Out",
+  "lesion": "Foot",
+  "vuelta": "Nov 29",
+  "titular": "Not ready to return Friday",
+  "fecha": "November 19, 2026",
+  "noticia": "Nurkic (toe) is listed as out for Friday's game against Phoenix."
+ },
+ {
+  "jugador": "Shai Gilgeous-Alexander",
+  "donde": [
+   "Shaquille O'Meal"
+  ],
+  "equipo": "OKC",
+  "url": "https://www.rotowire.com/basketball/player/shai-gilgeous-alexander-4387",
+  "estado": "Questionable",
+  "lesion": "Back",
+  "vuelta": "Nov 23",
+  "titular": "Questionable to play Sunday",
   "fecha": "November 21, 2026",
-  "noticia": "Washington (illness/shoulder) has been downgraded from questionable to doubtful ahead of Saturday's game against the Clippers."
+  "noticia": "Gilgeous-Alexander (back/neck) is listed as questionable for Sunday's game versus Miami."
+ },
+ {
+  "jugador": "Jimmy Butler",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "GSW",
+  "url": "https://www.rotowire.com/basketball/player/jimmy-butler-3231",
+  "estado": "Out",
+  "lesion": "Knee",
+  "vuelta": "Jan 2, 2027",
+  "titular": "Still months away from returning",
+  "fecha": "October 2, 2026",
+  "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
+ },
+ {
+  "jugador": "Scotty Pippen Jr.",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "error": "no encontrado en RotoWire"
+ },
+ {
+  "jugador": "Jaylen Clark",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "MIN",
+  "url": "https://www.rotowire.com/basketball/player/jaylen-clark-5972",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Nov 29",
+  "titular": "Won't return Saturday",
+  "fecha": "November 14, 2026",
+  "noticia": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
+ },
+ {
+  "jugador": "Nolan Traore",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "BKN",
+  "url": "https://www.rotowire.com/basketball/player/nolan-traore-6587",
+  "estado": "Out",
+  "lesion": "Hamstring",
+  "vuelta": "Jan 27, 2027",
+  "titular": "Ruled out for Monday",
+  "fecha": "November 22, 2026",
+  "noticia": "Traore (hamstring) has been ruled out for Monday's game against the Timberwolves."
  },
  {
   "jugador": "Bradley Beal",
@@ -174,7 +223,7 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/alex-caruso-3952",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hip",
   "vuelta": "Nov 23",
   "titular": "Sidelined against Pelicans",
@@ -196,48 +245,6 @@
   "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
  },
  {
-  "jugador": "Jusuf Nurkic",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "UTA",
-  "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
-  "estado": "Out",
-  "lesion": "Foot",
-  "vuelta": "Nov 29",
-  "titular": "Not ready to return Friday",
-  "fecha": "November 19, 2026",
-  "noticia": "Nurkic (toe) is listed as out for Friday's game against Phoenix."
- },
- {
-  "jugador": "Brandon Ingram",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "LAC",
-  "url": "https://www.rotowire.com/basketball/player/brandon-ingram-3861",
-  "estado": "Out",
-  "lesion": "Achilles",
-  "vuelta": "Nov 23",
-  "titular": "Ruled out for Thursday",
-  "fecha": "November 18, 2026",
-  "noticia": "Ingram (heel/Achilles) will remain on the inactive list for Thursday's game in San Antonio."
- },
- {
-  "jugador": "Myron Gardner",
-  "donde": [
-   "Galo State Warriors"
-  ],
-  "equipo": "MIA",
-  "url": "https://www.rotowire.com/basketball/player/myron-gardner-6067",
-  "estado": "Probable",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 22",
-  "titular": "Won't play Wednesday",
-  "fecha": "November 18, 2026",
-  "noticia": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
- },
- {
   "jugador": "RJ Barrett",
   "donde": [
    "Vamosnomejodas"
@@ -250,89 +257,5 @@
   "titular": "Won't play Wednesday",
   "fecha": "November 18, 2026",
   "noticia": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
- },
- {
-  "jugador": "Jimmy Butler",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "GSW",
-  "url": "https://www.rotowire.com/basketball/player/jimmy-butler-3231",
-  "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Jan 2, 2027",
-  "titular": "Still months away from returning",
-  "fecha": "October 2, 2026",
-  "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
- },
- {
-  "jugador": "Karl-Anthony Towns",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "NYK",
-  "url": "https://www.rotowire.com/basketball/player/karl-anthony-towns-3741",
-  "estado": "Questionable",
-  "lesion": "Illness",
-  "vuelta": "Nov 22",
-  "titular": "Questionable due to illness",
-  "fecha": "November 21, 2026",
-  "noticia": "Towns is questionable for Saturday's game against the Trail Blazers due to an illness."
- },
- {
-  "jugador": "Scotty Pippen Jr.",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "error": "no encontrado en RotoWire"
- },
- {
-  "jugador": "Jaylen Clark",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "MIN",
-  "url": "https://www.rotowire.com/basketball/player/jaylen-clark-5972",
-  "estado": "Out",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 29",
-  "titular": "Won't return Saturday",
-  "fecha": "November 14, 2026",
-  "noticia": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
- },
- {
-  "jugador": "Nolan Traore",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "BKN",
-  "url": "https://www.rotowire.com/basketball/player/nolan-traore-6587",
-  "estado": "Questionable",
-  "lesion": "Hamstring",
-  "vuelta": "Nov 23",
-  "titular": "Efficient shooting in loss to Bulls",
-  "fecha": "November 19, 2026",
-  "noticia": "Traore chipped in 13 points (6-9 FG, 1-3 3Pt, 0-1 FT), one rebound and four assists in 23 minutes during Wednesday's 137-107 loss to Chicago."
- },
- {
-  "jugador": "Ron Holland II",
-  "donde": [
-   "Dolla"
-  ],
-  "error": "no encontrado en RotoWire"
- },
- {
-  "jugador": "Reece Beekman",
-  "donde": [
-   "Dolla"
-  ],
-  "equipo": "WAS",
-  "url": "https://www.rotowire.com/basketball/player/reece-beekman-6292",
-  "estado": "Out",
-  "lesion": "Shoulder",
-  "vuelta": "Dec 3",
-  "titular": "Lands two-way pact",
-  "fecha": "October 17, 2026",
-  "noticia": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports."
  }
 ]
