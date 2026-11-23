@@ -6,12 +6,10 @@
   ],
   "equipo": "NOP",
   "url": "https://www.rotowire.com/basketball/player/trey-murphy-5401",
-  "estado": "Probable",
-  "lesion": "Knee",
-  "vuelta": "Nov 23",
-  "titular": "Won't play Saturday",
-  "fecha": "November 21, 2026",
-  "noticia": "Murphy (knee) has been ruled out for Saturday's game against the Spurs."
+  "estado": "No aparece en el parte",
+  "titular": "Probable for Monday",
+  "fecha": "November 22, 2026",
+  "noticia": "Murphy (knees) is listed as probable for Monday's game against the Suns."
  },
  {
   "jugador": "Jonathan Isaac",
@@ -62,12 +60,12 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Lower Leg",
-  "vuelta": "Nov 23",
-  "titular": "Records 22/16 double-double",
-  "fecha": "November 20, 2026",
-  "noticia": "Mara posted 22 points (11-15 FG), 16 rebounds, two assists and two blocks across 29 minutes during Friday's 126-120 win over the Pelicans."
+  "vuelta": "Nov 25",
+  "titular": "Ruled out Sunday night",
+  "fecha": "November 22, 2026",
+  "noticia": "Mara (shin) is listed as out for Sunday's game versus Miami."
  },
  {
   "jugador": "Zion Williamson",
@@ -132,12 +130,10 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/shai-gilgeous-alexander-4387",
-  "estado": "Questionable",
-  "lesion": "Back",
-  "vuelta": "Nov 23",
-  "titular": "Questionable to play Sunday",
-  "fecha": "November 21, 2026",
-  "noticia": "Gilgeous-Alexander (back/neck) is listed as questionable for Sunday's game versus Miami."
+  "estado": "No aparece en el parte",
+  "titular": "Ruled out Sunday",
+  "fecha": "November 22, 2026",
+  "noticia": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat."
  },
  {
   "jugador": "Jimmy Butler",
@@ -223,12 +219,12 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/alex-caruso-3952",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Hip",
-  "vuelta": "Nov 23",
-  "titular": "Sidelined against Pelicans",
-  "fecha": "November 20, 2026",
-  "noticia": "Caruso (hip) is listed as out for Friday's game against the Pelicans."
+  "vuelta": "Nov 25",
+  "titular": "Ruled out for Sunday",
+  "fecha": "November 21, 2026",
+  "noticia": "Caruso (hip) won't play Sunday against the Heat."
  },
  {
   "jugador": "Ja Morant",
