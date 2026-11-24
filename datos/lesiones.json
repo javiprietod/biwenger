@@ -1,17 +1,5 @@
 [
  {
-  "jugador": "Trey Murphy",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "NOP",
-  "url": "https://www.rotowire.com/basketball/player/trey-murphy-5401",
-  "estado": "No aparece en el parte",
-  "titular": "Probable for Monday",
-  "fecha": "November 22, 2026",
-  "noticia": "Murphy (knees) is listed as probable for Monday's game against the Suns."
- },
- {
   "jugador": "Jonathan Isaac",
   "donde": [
    "Mercado"
@@ -24,20 +12,6 @@
   "titular": "Remains out Monday",
   "fecha": "November 15, 2026",
   "noticia": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
- },
- {
-  "jugador": "Ariel Hukporti",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "PHI",
-  "url": "https://www.rotowire.com/basketball/player/ariel-hukporti-5778",
-  "estado": "OFS",
-  "lesion": "Achilles",
-  "vuelta": "Oct 1, 2027",
-  "titular": "Fails to return Monday",
-  "fecha": "October 5, 2026",
-  "noticia": "Hukporti didn't return to Monday's preseason game against the Knicks due to an Achilles injury and will undergo an MRI on Tuesday, Adam Aaronson of PhillyVoice.com reports. He didn't score (0-1 FG, 0-1 3Pt) and recorded one assist in five minutes before exiting."
  },
  {
   "jugador": "Norman Powell",
@@ -60,40 +34,12 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Lower Leg",
   "vuelta": "Nov 25",
   "titular": "Ruled out Sunday night",
   "fecha": "November 22, 2026",
   "noticia": "Mara (shin) is listed as out for Sunday's game versus Miami."
- },
- {
-  "jugador": "Zion Williamson",
-  "donde": [
-   "Celtics"
-  ],
-  "equipo": "NOP",
-  "url": "https://www.rotowire.com/basketball/player/zion-williamson-4777",
-  "estado": "Probable",
-  "lesion": "Thigh",
-  "vuelta": "Nov 23",
-  "titular": "Not playing Saturday",
-  "fecha": "November 21, 2026",
-  "noticia": "Williamson is out for Saturday's game against the Spurs due to a left thigh contusion."
- },
- {
-  "jugador": "Jaylon Tyson",
-  "donde": [
-   "Celtics"
-  ],
-  "equipo": "CLE",
-  "url": "https://www.rotowire.com/basketball/player/jaylon-tyson-6277",
-  "estado": "Probable",
-  "lesion": "Ankle",
-  "vuelta": "Nov 23",
-  "titular": "Out for Friday",
-  "fecha": "November 19, 2026",
-  "noticia": "Tyson (ankle) has been ruled out for Friday's game against Indiana."
  },
  {
   "jugador": "P.J. Washington",
@@ -105,9 +51,9 @@
   "estado": "Questionable",
   "lesion": "Illness",
   "vuelta": "Nov 24",
-  "titular": "Doubtful to play Sunday",
+  "titular": "Ruled out Sunday",
   "fecha": "November 22, 2026",
-  "noticia": "Washington (illness) is doubtful to play Sunday's game against the Jazz."
+  "noticia": "Washington (illness) has been ruled out for Sunday's game against the Jazz."
  },
  {
   "jugador": "Jusuf Nurkic",
@@ -122,18 +68,6 @@
   "titular": "Not ready to return Friday",
   "fecha": "November 19, 2026",
   "noticia": "Nurkic (toe) is listed as out for Friday's game against Phoenix."
- },
- {
-  "jugador": "Shai Gilgeous-Alexander",
-  "donde": [
-   "Shaquille O'Meal"
-  ],
-  "equipo": "OKC",
-  "url": "https://www.rotowire.com/basketball/player/shai-gilgeous-alexander-4387",
-  "estado": "No aparece en el parte",
-  "titular": "Ruled out Sunday",
-  "fecha": "November 22, 2026",
-  "noticia": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat."
  },
  {
   "jugador": "Jimmy Butler",
@@ -169,6 +103,20 @@
   "titular": "Won't return Saturday",
   "fecha": "November 14, 2026",
   "noticia": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
+ },
+ {
+  "jugador": "Ariel Hukporti",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "PHI",
+  "url": "https://www.rotowire.com/basketball/player/ariel-hukporti-5778",
+  "estado": "OFS",
+  "lesion": "Achilles",
+  "vuelta": "Oct 1, 2027",
+  "titular": "Fails to return Monday",
+  "fecha": "October 5, 2026",
+  "noticia": "Hukporti didn't return to Monday's preseason game against the Knicks due to an Achilles injury and will undergo an MRI on Tuesday, Adam Aaronson of PhillyVoice.com reports. He didn't score (0-1 FG, 0-1 3Pt) and recorded one assist in five minutes before exiting."
  },
  {
   "jugador": "Nolan Traore",
@@ -219,7 +167,7 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/alex-caruso-3952",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hip",
   "vuelta": "Nov 25",
   "titular": "Ruled out for Sunday",
