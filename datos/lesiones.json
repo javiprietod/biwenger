@@ -1,17 +1,38 @@
 [
  {
-  "jugador": "Jonathan Isaac",
+  "jugador": "TJ McConnell",
   "donde": [
    "Mercado"
   ],
-  "equipo": "ORL",
-  "url": "https://www.rotowire.com/basketball/player/jonathan-isaac-4103",
+  "error": "no encontrado en RotoWire"
+ },
+ {
+  "jugador": "Ryan Kalkbrenner",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "CHA",
+  "url": "https://www.rotowire.com/basketball/player/ryan-kalkbrenner-6567",
+  "estado": "Doubtful",
+  "lesion": "Hip",
+  "vuelta": "Nov 25",
+  "titular": "Won't return Monday",
+  "fecha": "November 23, 2026",
+  "noticia": "Kalkbrenner has been ruled out for the rest of Monday's game against Memphis due to left hip soreness. He'll end with two rebounds in nine minutes."
+ },
+ {
+  "jugador": "Maxime Raynaud",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/maxime-raynaud-6552",
   "estado": "Out",
   "lesion": "Knee",
-  "vuelta": "Nov 29",
-  "titular": "Remains out Monday",
-  "fecha": "November 15, 2026",
-  "noticia": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
+  "vuelta": "Dec 2",
+  "titular": "Ruled out for Wednesday",
+  "fecha": "November 24, 2026",
+  "noticia": "Raynaud (knee) is out for Wednesday's game against the Warriors."
  },
  {
   "jugador": "Norman Powell",
@@ -34,26 +55,26 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Lower Leg",
-  "vuelta": "Nov 25",
-  "titular": "Ruled out Sunday night",
-  "fecha": "November 22, 2026",
-  "noticia": "Mara (shin) is listed as out for Sunday's game versus Miami."
+  "vuelta": "Nov 28",
+  "titular": "Remaining out Monday",
+  "fecha": "November 23, 2026",
+  "noticia": "Mara (shin) has been ruled out for Monday's game against the Pacers."
  },
  {
-  "jugador": "P.J. Washington",
+  "jugador": "Yaxel Lendeborg",
   "donde": [
-   "latengocomowemby"
+   "Rueda"
   ],
-  "equipo": "DAL",
-  "url": "https://www.rotowire.com/basketball/player/pj-washington-4781",
+  "equipo": "GSW",
+  "url": "https://www.rotowire.com/basketball/player/yaxel-lendeborg-6562",
   "estado": "Questionable",
   "lesion": "Illness",
-  "vuelta": "Nov 24",
-  "titular": "Ruled out Sunday",
-  "fecha": "November 22, 2026",
-  "noticia": "Washington (illness) has been ruled out for Sunday's game against the Jazz."
+  "vuelta": "Nov 25",
+  "titular": "Struggles with shot Sunday",
+  "fecha": "November 23, 2026",
+  "noticia": "Lendeborg posted 12 points (5-13 FG, 1-4 3Pt, 1-2 FT), eight rebounds and three assists in 34 minutes during Sunday's 88-87 victory over the Celtics."
  },
  {
   "jugador": "Jusuf Nurkic",
@@ -70,6 +91,20 @@
   "noticia": "Nurkic (toe) is listed as out for Friday's game against Phoenix."
  },
  {
+  "jugador": "Jalen Smith",
+  "donde": [
+   "Shaquille O'Meal"
+  ],
+  "equipo": "CHI",
+  "url": "https://www.rotowire.com/basketball/player/jalen-smith-5169",
+  "estado": "Questionable",
+  "lesion": "Illness",
+  "vuelta": "Nov 25",
+  "titular": "Good to go Monday",
+  "fecha": "November 23, 2026",
+  "noticia": "Smith (illness) will play Monday against the Cavaliers, K.C. Johnson of Chicago Sports Network reports."
+ },
+ {
   "jugador": "Jimmy Butler",
   "donde": [
    "PENISLOVER"
@@ -82,6 +117,20 @@
   "titular": "Still months away from returning",
   "fecha": "October 2, 2026",
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
+ },
+ {
+  "jugador": "Karl-Anthony Towns",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "NYK",
+  "url": "https://www.rotowire.com/basketball/player/karl-anthony-towns-3741",
+  "estado": "Questionable",
+  "lesion": "Knee",
+  "vuelta": "Nov 25",
+  "titular": "Scores 30 in return",
+  "fecha": "November 22, 2026",
+  "noticia": "Towns posted 30 points (9-14 FG, 4-4 3Pt, 8-12 FT), 13 rebounds, five assists, three steals and two blocks in 29 minutes during Sunday's 113-106 win over the Pacers."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -161,20 +210,6 @@
   "noticia": "McCollum closed Sunday's 113-106 victory over the Bucks with 20 points (5-10 FG, 1-3 3Pt, 9-9 FT), four rebounds, two assists and four steals across 30 minutes."
  },
  {
-  "jugador": "Alex Caruso",
-  "donde": [
-   "Impredictables"
-  ],
-  "equipo": "OKC",
-  "url": "https://www.rotowire.com/basketball/player/alex-caruso-3952",
-  "estado": "Questionable",
-  "lesion": "Hip",
-  "vuelta": "Nov 25",
-  "titular": "Ruled out for Sunday",
-  "fecha": "November 21, 2026",
-  "noticia": "Caruso (hip) won't play Sunday against the Heat."
- },
- {
   "jugador": "Ja Morant",
   "donde": [
    "Impredictables"
@@ -187,19 +222,5 @@
   "titular": "Out four weeks with hamstring strain",
   "fecha": "October 30, 2026",
   "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
- },
- {
-  "jugador": "RJ Barrett",
-  "donde": [
-   "Vamosnomejodas"
-  ],
-  "equipo": "TOR",
-  "url": "https://www.rotowire.com/basketball/player/rj-barrett-4767",
-  "estado": "Out",
-  "lesion": "Hamstring",
-  "vuelta": "Dec 13",
-  "titular": "Won't play Wednesday",
-  "fecha": "November 18, 2026",
-  "noticia": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
  }
 ]
