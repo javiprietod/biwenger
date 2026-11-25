@@ -13,12 +13,12 @@
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/ryan-kalkbrenner-6567",
-  "estado": "Doubtful",
+  "estado": "Out",
   "lesion": "Hip",
-  "vuelta": "Nov 25",
-  "titular": "Won't return Monday",
-  "fecha": "November 23, 2026",
-  "noticia": "Kalkbrenner has been ruled out for the rest of Monday's game against Memphis due to left hip soreness. He'll end with two rebounds in nine minutes."
+  "vuelta": "Nov 28",
+  "titular": "Doubtful for Wednesday",
+  "fecha": "November 24, 2026",
+  "noticia": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls."
  },
  {
   "jugador": "Maxime Raynaud",
@@ -222,5 +222,19 @@
   "titular": "Out four weeks with hamstring strain",
   "fecha": "October 30, 2026",
   "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
+ },
+ {
+  "jugador": "Julian Reese",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "NOP",
+  "url": "https://www.rotowire.com/basketball/player/julian-reese-6653",
+  "estado": "Questionable",
+  "lesion": "Knee",
+  "vuelta": "Nov 25",
+  "titular": "Transferred to NBA",
+  "fecha": "November 16, 2026",
+  "noticia": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
  }
 ]
