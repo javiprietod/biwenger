@@ -7,13 +7,27 @@
   "error": "no encontrado en RotoWire"
  },
  {
+  "jugador": "Lauri Markkanen",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "UTA",
+  "url": "https://www.rotowire.com/basketball/player/lauri-markkanen-4119",
+  "estado": "Out",
+  "lesion": "Hand",
+  "vuelta": "Jan 4, 2027",
+  "titular": "Ruled out with wrist sprain",
+  "fecha": "November 10, 2026",
+  "noticia": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
+ },
+ {
   "jugador": "Ryan Kalkbrenner",
   "donde": [
    "Mercado"
   ],
   "equipo": "CHA",
   "url": "https://www.rotowire.com/basketball/player/ryan-kalkbrenner-6567",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hip",
   "vuelta": "Nov 28",
   "titular": "Doubtful for Wednesday",
@@ -30,9 +44,37 @@
   "estado": "Out",
   "lesion": "Knee",
   "vuelta": "Dec 2",
-  "titular": "Ruled out for Wednesday",
-  "fecha": "November 24, 2026",
-  "noticia": "Raynaud (knee) is out for Wednesday's game against the Warriors."
+  "titular": "Assigned to G League",
+  "fecha": "November 25, 2026",
+  "noticia": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
+ },
+ {
+  "jugador": "Dylan Harper",
+  "donde": [
+   "Mercado"
+  ],
+  "equipo": "SAS",
+  "url": "https://www.rotowire.com/basketball/player/dylan-harper-6549",
+  "estado": "Out",
+  "lesion": "Hip",
+  "vuelta": "Dec 13",
+  "titular": "Will undergo further testing Thursday",
+  "fecha": "November 19, 2026",
+  "noticia": "Harper (hip) will undergo further testing Thursday, but his return date remains uncertain, and he won't be available to face the Clippers, Jeff McDonald of the San Antonio Express-News reports."
+ },
+ {
+  "jugador": "Zach LaVine",
+  "donde": [
+   "Antony Jordan"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/zach-lavine-3597",
+  "estado": "Questionable",
+  "lesion": "Knee",
+  "vuelta": "Nov 29",
+  "titular": "Downgraded to questionable",
+  "fecha": "November 25, 2026",
+  "noticia": "LaVine (knee) has been downgraded to questionable for Wednesday's game against Golden State."
  },
  {
   "jugador": "Norman Powell",
@@ -49,32 +91,32 @@
   "noticia": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain."
  },
  {
+  "jugador": "Zach Edey",
+  "donde": [
+   "Rueda"
+  ],
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/zach-edey-6263",
+  "estado": "Questionable",
+  "lesion": "Ankle",
+  "vuelta": "Nov 27",
+  "titular": "Not expected to return Wednesday",
+  "fecha": "November 25, 2026",
+  "noticia": "Edey (ankle) is doubtful to return to Wednesday's game against the Clippers."
+ },
+ {
   "jugador": "Aday Mara",
   "donde": [
    "Rueda"
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Lower Leg",
   "vuelta": "Nov 28",
   "titular": "Remaining out Monday",
   "fecha": "November 23, 2026",
   "noticia": "Mara (shin) has been ruled out for Monday's game against the Pacers."
- },
- {
-  "jugador": "Yaxel Lendeborg",
-  "donde": [
-   "Rueda"
-  ],
-  "equipo": "GSW",
-  "url": "https://www.rotowire.com/basketball/player/yaxel-lendeborg-6562",
-  "estado": "Questionable",
-  "lesion": "Illness",
-  "vuelta": "Nov 25",
-  "titular": "Struggles with shot Sunday",
-  "fecha": "November 23, 2026",
-  "noticia": "Lendeborg posted 12 points (5-13 FG, 1-4 3Pt, 1-2 FT), eight rebounds and three assists in 34 minutes during Sunday's 88-87 victory over the Celtics."
  },
  {
   "jugador": "Jusuf Nurkic",
@@ -99,10 +141,10 @@
   "url": "https://www.rotowire.com/basketball/player/jalen-smith-5169",
   "estado": "Questionable",
   "lesion": "Illness",
-  "vuelta": "Nov 25",
-  "titular": "Good to go Monday",
-  "fecha": "November 23, 2026",
-  "noticia": "Smith (illness) will play Monday against the Cavaliers, K.C. Johnson of Chicago Sports Network reports."
+  "vuelta": "Nov 28",
+  "titular": "Iffy for Wednesday",
+  "fecha": "November 24, 2026",
+  "noticia": "Smith (illness) is listed as questionable for Wednesday's game against the Hornets."
  },
  {
   "jugador": "Jimmy Butler",
@@ -117,20 +159,6 @@
   "titular": "Still months away from returning",
   "fecha": "October 2, 2026",
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
- },
- {
-  "jugador": "Karl-Anthony Towns",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "NYK",
-  "url": "https://www.rotowire.com/basketball/player/karl-anthony-towns-3741",
-  "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Nov 25",
-  "titular": "Scores 30 in return",
-  "fecha": "November 22, 2026",
-  "noticia": "Towns posted 30 points (9-14 FG, 4-4 3Pt, 8-12 FT), 13 rebounds, five assists, three steals and two blocks in 29 minutes during Sunday's 113-106 win over the Pacers."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -180,6 +208,20 @@
   "titular": "Ruled out for Monday",
   "fecha": "November 22, 2026",
   "noticia": "Traore (hamstring) has been ruled out for Monday's game against the Timberwolves."
+ },
+ {
+  "jugador": "Moritz Wagner",
+  "donde": [
+   "Impredictables"
+  ],
+  "equipo": "BKN",
+  "url": "https://www.rotowire.com/basketball/player/moritz-wagner-4389",
+  "estado": "Out",
+  "lesion": "Knee",
+  "vuelta": "Nov 27",
+  "titular": "Scores 11 points in blowout loss",
+  "fecha": "November 19, 2026",
+  "noticia": "Wagner closed with 11 points (4-4 FG, 2-2 3Pt, 1-3 FT), two rebounds, three assists and one steal over 20 minutes during Wednesday's 137-107 loss to the Bulls."
  },
  {
   "jugador": "Bradley Beal",
@@ -232,7 +274,7 @@
   "url": "https://www.rotowire.com/basketball/player/julian-reese-6653",
   "estado": "Questionable",
   "lesion": "Knee",
-  "vuelta": "Nov 25",
+  "vuelta": "Dec 1",
   "titular": "Transferred to NBA",
   "fecha": "November 16, 2026",
   "noticia": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
