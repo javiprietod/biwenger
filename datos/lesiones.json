@@ -1,10 +1,17 @@
 [
  {
-  "jugador": "TJ McConnell",
+  "jugador": "Alijah Martin",
   "donde": [
-   "Mercado"
+   "Mi equipo"
   ],
-  "error": "no encontrado en RotoWire"
+  "equipo": "TOR",
+  "url": "https://www.rotowire.com/basketball/player/alijah-martin-6612",
+  "estado": "Questionable",
+  "lesion": "Knee",
+  "vuelta": "Nov 27",
+  "titular": "Playing time continues to decline",
+  "fecha": "November 18, 2026",
+  "noticia": "Martin contributed two rebounds in eight minutes during Tuesday's 111-102 loss to the Knicks."
  },
  {
   "jugador": "Lauri Markkanen",
@@ -21,32 +28,18 @@
   "noticia": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
  },
  {
-  "jugador": "Ryan Kalkbrenner",
+  "jugador": "Jalen Duren",
   "donde": [
    "Mercado"
   ],
-  "equipo": "CHA",
-  "url": "https://www.rotowire.com/basketball/player/ryan-kalkbrenner-6567",
-  "estado": "Questionable",
-  "lesion": "Hip",
-  "vuelta": "Nov 28",
-  "titular": "Doubtful for Wednesday",
-  "fecha": "November 24, 2026",
-  "noticia": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls."
- },
- {
-  "jugador": "Maxime Raynaud",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "SAC",
-  "url": "https://www.rotowire.com/basketball/player/maxime-raynaud-6552",
+  "equipo": "DET",
+  "url": "https://www.rotowire.com/basketball/player/jalen-duren-5703",
   "estado": "Out",
-  "lesion": "Knee",
-  "vuelta": "Dec 2",
-  "titular": "Assigned to G League",
-  "fecha": "November 25, 2026",
-  "noticia": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
+  "lesion": "Hamstring",
+  "vuelta": "Nov 30",
+  "titular": "Practicing in G League",
+  "fecha": "November 24, 2026",
+  "noticia": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a potential return, Eric Vincent of ClutchPoints.com reports."
  },
  {
   "jugador": "Dylan Harper",
@@ -55,12 +48,12 @@
   ],
   "equipo": "SAS",
   "url": "https://www.rotowire.com/basketball/player/dylan-harper-6549",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Hip",
-  "vuelta": "Dec 13",
-  "titular": "Will undergo further testing Thursday",
+  "vuelta": "Nov 27",
+  "titular": "Out multiple weeks with hip strain",
   "fecha": "November 19, 2026",
-  "noticia": "Harper (hip) will undergo further testing Thursday, but his return date remains uncertain, and he won't be available to face the Clippers, Jeff McDonald of the San Antonio Express-News reports."
+  "noticia": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports."
  },
  {
   "jugador": "Zach LaVine",
@@ -100,9 +93,9 @@
   "estado": "Questionable",
   "lesion": "Ankle",
   "vuelta": "Nov 27",
-  "titular": "Not expected to return Wednesday",
+  "titular": "Does not return Wednesday",
   "fecha": "November 25, 2026",
-  "noticia": "Edey (ankle) is doubtful to return to Wednesday's game against the Clippers."
+  "noticia": "Edey (ankle) did not return to Wednesday's 115-97 win over the Clippers. He finished with seven points (3-4 FG, 1-1 FT), four rebounds, two assists and two blocks across nine minutes."
  },
  {
   "jugador": "Aday Mara",
@@ -119,18 +112,46 @@
   "noticia": "Mara (shin) has been ruled out for Monday's game against the Pacers."
  },
  {
+  "jugador": "Maxime Raynaud",
+  "donde": [
+   "Celtics"
+  ],
+  "equipo": "SAC",
+  "url": "https://www.rotowire.com/basketball/player/maxime-raynaud-6552",
+  "estado": "Out",
+  "lesion": "Knee",
+  "vuelta": "Dec 2",
+  "titular": "Assigned to G League",
+  "fecha": "November 25, 2026",
+  "noticia": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
+ },
+ {
   "jugador": "Jusuf Nurkic",
   "donde": [
    "Galo State Warriors"
   ],
   "equipo": "UTA",
   "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Foot",
-  "vuelta": "Nov 29",
-  "titular": "Not ready to return Friday",
-  "fecha": "November 19, 2026",
-  "noticia": "Nurkic (toe) is listed as out for Friday's game against Phoenix."
+  "vuelta": "Nov 27",
+  "titular": "Will be re-evaluated in one week",
+  "fecha": "November 20, 2026",
+  "noticia": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
+ },
+ {
+  "jugador": "Isaiah Stewart",
+  "donde": [
+   "Shaquille O'Meal"
+  ],
+  "equipo": "MEM",
+  "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
+  "estado": "Questionable",
+  "lesion": "Hip",
+  "vuelta": "Nov 27",
+  "titular": "Adds 11 points in victory",
+  "fecha": "November 24, 2026",
+  "noticia": "Stewart chipped in 11 points (5-9 FG, 1-3 3Pt) and four rebounds in 21 minutes during Monday's 117-111 victory over the Hornets."
  },
  {
   "jugador": "Jalen Smith",
@@ -159,6 +180,20 @@
   "titular": "Still months away from returning",
   "fecha": "October 2, 2026",
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
+ },
+ {
+  "jugador": "Andrew Wiggins",
+  "donde": [
+   "PENISLOVER"
+  ],
+  "equipo": "MIA",
+  "url": "https://www.rotowire.com/basketball/player/andrew-wiggins-3571",
+  "estado": "Probable",
+  "lesion": "Ankle",
+  "vuelta": "Nov 27",
+  "titular": "Limited production in loss",
+  "fecha": "November 25, 2026",
+  "noticia": "Wiggins finished Wednesday's 111-104 loss to Philadelphia with eight points (4-6 FG, 0-2 3Pt), two rebounds and two assists in 24 minutes."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -218,10 +253,10 @@
   "url": "https://www.rotowire.com/basketball/player/moritz-wagner-4389",
   "estado": "Out",
   "lesion": "Knee",
-  "vuelta": "Nov 27",
-  "titular": "Scores 11 points in blowout loss",
-  "fecha": "November 19, 2026",
-  "noticia": "Wagner closed with 11 points (4-4 FG, 2-2 3Pt, 1-3 FT), two rebounds, three assists and one steal over 20 minutes during Wednesday's 137-107 loss to the Bulls."
+  "vuelta": "Nov 28",
+  "titular": "Won't return Wednesday",
+  "fecha": "November 25, 2026",
+  "noticia": "Wagner (knee) will not return to Wednesday's game against the Bucks, C.J. Holmes of the New York Daily News reports."
  },
  {
   "jugador": "Bradley Beal",
@@ -264,19 +299,5 @@
   "titular": "Out four weeks with hamstring strain",
   "fecha": "October 30, 2026",
   "noticia": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
- },
- {
-  "jugador": "Julian Reese",
-  "donde": [
-   "Impredictables"
-  ],
-  "equipo": "NOP",
-  "url": "https://www.rotowire.com/basketball/player/julian-reese-6653",
-  "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Dec 1",
-  "titular": "Transferred to NBA",
-  "fecha": "November 16, 2026",
-  "noticia": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday."
  }
 ]
