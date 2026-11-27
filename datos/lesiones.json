@@ -140,6 +140,13 @@
   "noticia": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
  },
  {
+  "jugador": "Mohamed Bamba",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "error": "no encontrado en RotoWire"
+ },
+ {
   "jugador": "Isaiah Stewart",
   "donde": [
    "Shaquille O'Meal"
@@ -182,18 +189,18 @@
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
  },
  {
-  "jugador": "Andrew Wiggins",
+  "jugador": "Karl-Anthony Towns",
   "donde": [
    "PENISLOVER"
   ],
-  "equipo": "MIA",
-  "url": "https://www.rotowire.com/basketball/player/andrew-wiggins-3571",
-  "estado": "Probable",
-  "lesion": "Ankle",
+  "equipo": "NYK",
+  "url": "https://www.rotowire.com/basketball/player/karl-anthony-towns-3741",
+  "estado": "Questionable",
+  "lesion": "Abdomen",
   "vuelta": "Nov 27",
-  "titular": "Limited production in loss",
+  "titular": "Records double-double in victory",
   "fecha": "November 25, 2026",
-  "noticia": "Wiggins finished Wednesday's 111-104 loss to Philadelphia with eight points (4-6 FG, 0-2 3Pt), two rebounds and two assists in 24 minutes."
+  "noticia": "Towns recorded 12 points (4-8 FG, 1-2 3Pt, 3-4 FT), 10 rebounds, seven assists, three blocks and one steal across 33 minutes during Wednesday's 121-102 win over the Cavaliers."
  },
  {
   "jugador": "Scotty Pippen Jr.",
