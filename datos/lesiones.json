@@ -1,33 +1,5 @@
 [
  {
-  "jugador": "Alijah Martin",
-  "donde": [
-   "Mi equipo"
-  ],
-  "equipo": "TOR",
-  "url": "https://www.rotowire.com/basketball/player/alijah-martin-6612",
-  "estado": "Questionable",
-  "lesion": "Knee",
-  "vuelta": "Nov 27",
-  "titular": "Playing time continues to decline",
-  "fecha": "November 18, 2026",
-  "noticia": "Martin contributed two rebounds in eight minutes during Tuesday's 111-102 loss to the Knicks."
- },
- {
-  "jugador": "Lauri Markkanen",
-  "donde": [
-   "Mercado"
-  ],
-  "equipo": "UTA",
-  "url": "https://www.rotowire.com/basketball/player/lauri-markkanen-4119",
-  "estado": "Out",
-  "lesion": "Hand",
-  "vuelta": "Jan 4, 2027",
-  "titular": "Ruled out with wrist sprain",
-  "fecha": "November 10, 2026",
-  "noticia": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
- },
- {
   "jugador": "Jalen Duren",
   "donde": [
    "Mercado"
@@ -42,18 +14,18 @@
   "noticia": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a potential return, Eric Vincent of ClutchPoints.com reports."
  },
  {
-  "jugador": "Dylan Harper",
+  "jugador": "Kasparas Jakucionis",
   "donde": [
    "Mercado"
   ],
-  "equipo": "SAS",
-  "url": "https://www.rotowire.com/basketball/player/dylan-harper-6549",
+  "equipo": "MIL",
+  "url": "https://www.rotowire.com/basketball/player/kasparas-jakucionis-6557",
   "estado": "Questionable",
-  "lesion": "Hip",
-  "vuelta": "Nov 27",
-  "titular": "Out multiple weeks with hip strain",
-  "fecha": "November 19, 2026",
-  "noticia": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports."
+  "lesion": "Ankle",
+  "vuelta": "Nov 28",
+  "titular": "Scoring surge continues off bench",
+  "fecha": "November 20, 2026",
+  "noticia": "Jakucionis logged 18 points (6-11 FG, 3-6 3Pt, 3-5 FT), three rebounds, two assists and one steal over 22 minutes during Thursday's 124-114 loss to the Trail Blazers."
  },
  {
   "jugador": "Zach LaVine",
@@ -78,24 +50,10 @@
   "url": "https://www.rotowire.com/basketball/player/norman-powell-3726",
   "estado": "Out",
   "lesion": "Hamstring",
-  "vuelta": "Nov 28",
-  "titular": "Questionable to play Sunday",
-  "fecha": "November 21, 2026",
-  "noticia": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain."
- },
- {
-  "jugador": "Zach Edey",
-  "donde": [
-   "Rueda"
-  ],
-  "equipo": "MEM",
-  "url": "https://www.rotowire.com/basketball/player/zach-edey-6263",
-  "estado": "Questionable",
-  "lesion": "Ankle",
-  "vuelta": "Nov 27",
-  "titular": "Does not return Wednesday",
-  "fecha": "November 25, 2026",
-  "noticia": "Edey (ankle) did not return to Wednesday's 115-97 win over the Clippers. He finished with seven points (3-4 FG, 1-1 FT), four rebounds, two assists and two blocks across nine minutes."
+  "vuelta": "Dec 1",
+  "titular": "To be re-evaluated later this week",
+  "fecha": "November 22, 2026",
+  "noticia": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week."
  },
  {
   "jugador": "Aday Mara",
@@ -104,12 +62,12 @@
   ],
   "equipo": "OKC",
   "url": "https://www.rotowire.com/basketball/player/aday-mara-6932",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Lower Leg",
-  "vuelta": "Nov 28",
-  "titular": "Remaining out Monday",
-  "fecha": "November 23, 2026",
-  "noticia": "Mara (shin) has been ruled out for Monday's game against the Pacers."
+  "vuelta": "Nov 30",
+  "titular": "Ruled out for Wednesday",
+  "fecha": "November 24, 2026",
+  "noticia": "Mara (leg) is out for Wednesday's game versus the Timberwolves."
  },
  {
   "jugador": "Maxime Raynaud",
@@ -126,18 +84,18 @@
   "noticia": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports."
  },
  {
-  "jugador": "Jusuf Nurkic",
+  "jugador": "Lauri Markkanen",
   "donde": [
-   "Galo State Warriors"
+   "latengocomowemby"
   ],
   "equipo": "UTA",
-  "url": "https://www.rotowire.com/basketball/player/jusuf-nurkic-3580",
-  "estado": "Questionable",
-  "lesion": "Foot",
-  "vuelta": "Nov 27",
-  "titular": "Will be re-evaluated in one week",
-  "fecha": "November 20, 2026",
-  "noticia": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
+  "url": "https://www.rotowire.com/basketball/player/lauri-markkanen-4119",
+  "estado": "Out",
+  "lesion": "Hand",
+  "vuelta": "Jan 4, 2027",
+  "titular": "Ruled out with wrist sprain",
+  "fecha": "November 10, 2026",
+  "noticia": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
  },
  {
   "jugador": "Mohamed Bamba",
@@ -147,18 +105,32 @@
   "error": "no encontrado en RotoWire"
  },
  {
+  "jugador": "Caleb Martin",
+  "donde": [
+   "Galo State Warriors"
+  ],
+  "equipo": "DAL",
+  "url": "https://www.rotowire.com/basketball/player/caleb-martin-4931",
+  "estado": "Questionable",
+  "lesion": "Ankle",
+  "vuelta": "Nov 30",
+  "titular": "Solid showing in victory",
+  "fecha": "November 25, 2026",
+  "noticia": "Martin ended Tuesday's 120-101 win over the Nuggets with 13 points (5-8 FG, 3-6 3Pt), four rebounds, four assists, two blocks and five steals over 30 minutes."
+ },
+ {
   "jugador": "Isaiah Stewart",
   "donde": [
    "Shaquille O'Meal"
   ],
   "equipo": "MEM",
   "url": "https://www.rotowire.com/basketball/player/isaiah-stewart-5137",
-  "estado": "Questionable",
+  "estado": "Out",
   "lesion": "Hip",
-  "vuelta": "Nov 27",
-  "titular": "Adds 11 points in victory",
-  "fecha": "November 24, 2026",
-  "noticia": "Stewart chipped in 11 points (5-9 FG, 1-3 3Pt) and four rebounds in 21 minutes during Monday's 117-111 victory over the Hornets."
+  "vuelta": "Nov 29",
+  "titular": "Dealing with hip soreness",
+  "fecha": "November 26, 2026",
+  "noticia": "Stewart is questionable for Friday's game against the Timberwolves due to right hip soreness."
  },
  {
   "jugador": "Jalen Smith",
@@ -167,12 +139,12 @@
   ],
   "equipo": "CHI",
   "url": "https://www.rotowire.com/basketball/player/jalen-smith-5169",
-  "estado": "Questionable",
+  "estado": "Probable",
   "lesion": "Illness",
   "vuelta": "Nov 28",
-  "titular": "Iffy for Wednesday",
-  "fecha": "November 24, 2026",
-  "noticia": "Smith (illness) is listed as questionable for Wednesday's game against the Hornets."
+  "titular": "Ruled out Wednesday",
+  "fecha": "November 25, 2026",
+  "noticia": "Smith (illness) is listed as out for Wednesday's game against Charlotte."
  },
  {
   "jugador": "Jimmy Butler",
@@ -187,20 +159,6 @@
   "titular": "Still months away from returning",
   "fecha": "October 2, 2026",
   "noticia": "The Warriors hope to have Butler (knee) back early in 2027, per Keith Watkins of Yahoo Sports."
- },
- {
-  "jugador": "Karl-Anthony Towns",
-  "donde": [
-   "PENISLOVER"
-  ],
-  "equipo": "NYK",
-  "url": "https://www.rotowire.com/basketball/player/karl-anthony-towns-3741",
-  "estado": "Questionable",
-  "lesion": "Abdomen",
-  "vuelta": "Nov 27",
-  "titular": "Records double-double in victory",
-  "fecha": "November 25, 2026",
-  "noticia": "Towns recorded 12 points (4-8 FG, 1-2 3Pt, 3-4 FT), 10 rebounds, seven assists, three blocks and one steal across 33 minutes during Wednesday's 121-102 win over the Cavaliers."
  },
  {
   "jugador": "Scotty Pippen Jr.",
@@ -258,7 +216,7 @@
   ],
   "equipo": "BKN",
   "url": "https://www.rotowire.com/basketball/player/moritz-wagner-4389",
-  "estado": "Out",
+  "estado": "Questionable",
   "lesion": "Knee",
   "vuelta": "Nov 28",
   "titular": "Won't return Wednesday",
